@@ -20,6 +20,10 @@ Ideas deferred from the current ROCm adaptation / OmniDocBench phase.
 
 ## Open investigations
 
-- vLLM ROCm viability for Qwen2.5-VL / Dolphin-v2 on gfx1100
+- vLLM on gfx1100: prebuilt wheels ruled out (see
+  `evidence/compatibility/vllm-rocm72-gfx1100.md`); remaining paths are the
+  `rocm/vllm` container images or a source build with
+  `PYTORCH_ROCM_ARCH=gfx1100` once the GPU is free
 - TunableOps and `torch.compile` net benefit after accuracy checks
 - Scorer packaging differences across OmniDocBench revisions
+- OmniDocBench metric parity check for the batch=8 performance profile

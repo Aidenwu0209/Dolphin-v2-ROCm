@@ -13,7 +13,7 @@ OmniDocBench v1.6 评测与性能证据。
 | OmniDocBench v1.6 canary（20 页） | **已验证**（19/20 成功，1 软超时，fallback=0） |
 | OmniDocBench v1.6 全量评测（1651 页） | **进行中**（W7900D 上可 resume；约 220 s/页） |
 | 性能基线与优化对照（3 次重复） | **已验证** — batch=8 提升约 12% pages/s，详见 evidence/performance/comparison.md |
-| vLLM ROCm 后端 | **实验性 / 未验证** |
+| vLLM ROCm 后端 | **预编译轮子在本环境不可用**（PyPI 仅 CUDA；AMD ROCm 7.2 索引无 vLLM），详见 evidence/compatibility/ |
 
 计划中的能力不得写成已完成。公开指标必须能链接到 `results/` 或 `evidence/` 中的 JSON。
 

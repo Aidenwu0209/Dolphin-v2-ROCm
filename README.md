@@ -13,7 +13,7 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | OmniDocBench v1.6 canary (20 pages) | **Verified** (19/20 success, 1 soft-timeout, fallback=0) — [evidence/accuracy/canary/](evidence/accuracy/canary/) |
 | OmniDocBench v1.6 full eval (1651 pages) | **In progress** on W7900D (resumable; ~days at ~220 s/page) |
 | Performance baseline vs optimized (3-repeat) | **Verified** — batch=8 gives +12% pages/s; [evidence/performance/comparison.md](evidence/performance/comparison.md) |
-| vLLM ROCm backend | **Experimental / unverified** |
+| vLLM ROCm backend | **Known-incompatible via prebuilt wheels** on this stack (PyPI ships CUDA-only; AMD ROCm 7.2 wheel index has no vLLM) — [evidence/compatibility/vllm-rocm72-gfx1100.md](evidence/compatibility/vllm-rocm72-gfx1100.md) |
 
 Do not treat planned items as completed. Every public metric must link to JSON
 under `results/` or `evidence/`.
