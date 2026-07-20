@@ -85,8 +85,12 @@ def main() -> None:
     results = []
     # warmup
     profile_once(model, proc, "Read text in the image.", image.crop((0, 0, 400, 200)), 32)
-    results.append(profile_once(model, proc, "Parse the reading order of this document.", image, args.max_new))
-    results.append(profile_once(model, proc, "Read text in the image.", image.crop((100, 300, 900, 700)), args.max_new))
+    results.append(
+        profile_once(model, proc, "Parse the reading order of this document.", image, args.max_new)
+    )
+    results.append(
+        profile_once(model, proc, "Read text in the image.", image.crop((100, 300, 900, 700)), args.max_new)
+    )
     results.append(profile_once(model, proc, "Read text in the image.", image, args.max_new))
     print(json.dumps({"attn": args.attn, "results": results}, indent=2))
 
