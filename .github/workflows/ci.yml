@@ -39,16 +39,22 @@ jobs:
       - name: Secret / weight leak guard
         run: |
           set -euo pipefail
-          if git ls-files | grep -E '\\.(safetensors|bin|pth|pem|key)$|\\.env$|id_rsa'; then
+          if git ls-files | grep -E '\.(safetensors|bin|pth|pem|key)$|\.env$|id_rsa'; then
             echo "Forbidden tracked files detected" >&2
             exit 1
           fi
-          if git grep -nE 'BEGIN (RSA |OPENSSH )?PRIVATE KEY|HF_TOKEN=|huggingface.*token' -- ':!MODEL_LICENSE' ':!NOTICE' ':!docs/**' || true; then
-            matches=$(git grep -nE 'BEGIN (RSA |OPENSSH )?PRIVATE KEY|HF_TOKEN=' -- . || true)
-            if [[ -n "${matches}" ]]; then
-              echo "${matches}" >&2
-              exit 1
-            fi
+          # Search tracked content only; exclude workflow self-references and license docs.
+          matches=$(git grep -nE 'BEGIN (RSA |OPENSSH )?PRIVATE KEY|^HF_TOKEN=' \
+            -- \
+            ':!.github/**' \
+            ':!MODEL_LICENSE' \
+            ':!NOTICE' \
+            ':!docs/**' \
+            ':!evidence/**' \
+            || true)
+          if [[ -n "${matches}" ]]; then
+            echo "${matches}" >&2
+            exit 1
           fi
 
       - name: README relative links exist

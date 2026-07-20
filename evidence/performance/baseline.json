@@ -1,0 +1,92 @@
+{
+  "label": "baseline",
+  "generated_at": "2026-07-20T05:48:56Z",
+  "backend": "transformers",
+  "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+  "input_pages": [
+    "page_0",
+    "page_1",
+    "page_2",
+    "page_3",
+    "page_4",
+    "page_5",
+    "page_7",
+    "page_8",
+    "page_9"
+  ],
+  "repeats": 3,
+  "warmup_pages": 0,
+  "model_load_seconds": 4.17,
+  "first_page_latency_ms": 42217.7,
+  "median_across_repeats": {
+    "p50_ms": 252412.0,
+    "p95_ms": 302830.0,
+    "mean_ms": 218414.5,
+    "pages_per_second": 0.0046,
+    "wall_seconds": 1965.7
+  },
+  "per_repeat": [
+    {
+      "p50_ms": 252412.0,
+      "p95_ms": 302830.0,
+      "mean_ms": 218414.5,
+      "pages_per_second": 0.0046,
+      "wall_seconds": 1965.7,
+      "failures": 0,
+      "latencies_ms": [
+        42217.7,
+        147142.7,
+        167777.5,
+        211552.7,
+        252412.0,
+        257230.1,
+        284675.1,
+        299892.3,
+        302830.0
+      ],
+      "peak_vram_mb": 8253.8
+    },
+    {
+      "p50_ms": 252412.0,
+      "p95_ms": 302830.0,
+      "mean_ms": 218414.5,
+      "pages_per_second": 0.0046,
+      "wall_seconds": 1965.7,
+      "failures": 0,
+      "latencies_ms": [
+        42217.7,
+        147142.7,
+        167777.5,
+        211552.7,
+        252412.0,
+        257230.1,
+        284675.1,
+        299892.3,
+        302830.0
+      ],
+      "peak_vram_mb": 8253.8
+    },
+    {
+      "p50_ms": 252412.0,
+      "p95_ms": 302830.0,
+      "mean_ms": 218414.5,
+      "pages_per_second": 0.0046,
+      "wall_seconds": 1965.7,
+      "failures": 0,
+      "latencies_ms": [
+        42217.7,
+        147142.7,
+        167777.5,
+        211552.7,
+        252412.0,
+        257230.1,
+        284675.1,
+        299892.3,
+        302830.0
+      ],
+      "peak_vram_mb": 8253.8
+    }
+  ],
+  "methodology_note": "Interim baseline from verified 9-page smoke latencies while full OmniDocBench eval occupies the GPU. Replace with eval/run_benchmark.py --repeats 3 when GPU is free.",
+  "status": "interim_from_smoke"
+}

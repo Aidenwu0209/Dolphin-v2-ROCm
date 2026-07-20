@@ -1,0 +1,46 @@
+{
+  "label": "run_attached",
+  "generated_at": "2026-07-20T05:45:12Z",
+  "backend": "transformers",
+  "config_digest": "sha256:fee23a0928442a4fb946ba52b00fa9c44f5cfca23d661e0a91d547c5dd800eb4",
+  "input_pages": [
+    "docstructbench_dianzishu_zhongwenzaixian-o.O-63678132.pdf_161",
+    "docstructbench_enbook-zlib-o.O-17208435.pdf_105",
+    "docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1",
+    "eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11",
+    "jiaocaineedrop_Chapter9.pdf_46",
+    "jiaocaineedrop_eng_gls.pdf_6",
+    "page-1c08a4a2-8163-44d3-93f0-9449457dbba3",
+    "page-374e9c4b-6fdb-4176-8ac7-519b86d97e40",
+    "page-404e0471-bd71-426a-8e5a-81b8327f88e5",
+    "page-4431f432-9e71-46d3-a5ea-4d705ad163a8",
+    "page-52875b3d-f4dc-44c2-a9bb-514b0763833d",
+    "page-961a543b-d09d-4fd8-944a-1a38d67bb3bc",
+    "page-ba4443e6-f432-435f-89e7-ddf0a571d2cd",
+    "page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b",
+    "page-cd70bbf7-d3ee-4329-8e82-74144e709481",
+    "page-cdd33cf6-76ce-42bb-a99c-342c861afed0",
+    "page-d1561665-5359-42fe-920c-d6e3bff81953",
+    "page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1",
+    "page-f108020f-edc5-4a27-85d9-d9d9c5d67309"
+  ],
+  "repeats": 1,
+  "model_load_seconds": 4.15,
+  "first_page_latency_ms": 81766.0,
+  "median_across_repeats": {
+    "p50_ms": 168968.0,
+    "p95_ms": 363850.5,
+    "mean_ms": 200886.45263157896,
+    "pages_per_second": 0.0034619729601690903,
+    "wall_seconds": 5488.2
+  },
+  "per_repeat": [
+    {
+      "p50_ms": 168968.0,
+      "p95_ms": 363850.5,
+      "pages_per_second": 0.0034619729601690903,
+      "failures": 1
+    }
+  ],
+  "note": "Single-run attachment; use eval/run_benchmark.py for formal 3-repeat benchmarks."
+}

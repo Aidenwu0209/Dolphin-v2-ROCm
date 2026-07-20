@@ -10,9 +10,9 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | Environment doctor on W7900D / gfx1100 / ROCm 7.2 | **Verified** |
 | Transformers ROCm backend (BF16, SDPA) | **Verified** |
 | Multi-page smoke (9/9, fallback=0) | **Verified** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
-| OmniDocBench v1.6 canary (20 pages) | **In progress** |
-| OmniDocBench v1.6 full eval (1651 pages) | **In progress** (long-running; resumable) |
-| Performance baseline vs optimized | **In progress** |
+| OmniDocBench v1.6 canary (20 pages) | **Verified** (19/20 success, 1 soft-timeout, fallback=0) — [evidence/accuracy/canary/](evidence/accuracy/canary/) |
+| OmniDocBench v1.6 full eval (1651 pages) | **In progress** on W7900D (resumable; ~days at ~220 s/page) |
+| Performance baseline vs optimized | **Interim baseline** from smoke — [evidence/performance/baseline.json](evidence/performance/baseline.json); formal 3-repeat pending GPU |
 | vLLM ROCm backend | **Experimental / unverified** |
 
 Do not treat planned items as completed. Every public metric must link to JSON

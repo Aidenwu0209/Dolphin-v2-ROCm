@@ -10,9 +10,9 @@ OmniDocBench v1.6 评测与性能证据。
 | W7900D / gfx1100 / ROCm 7.2 环境诊断 | **已验证** |
 | Transformers ROCm 后端（BF16、SDPA） | **已验证** |
 | 多样本 smoke（9/9，fallback=0） | **已验证** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
-| OmniDocBench v1.6 canary（20 页） | **进行中** |
-| OmniDocBench v1.6 全量评测（1651 页） | **进行中**（长时间任务，可 resume） |
-| 性能基线与优化对照 | **进行中** |
+| OmniDocBench v1.6 canary（20 页） | **已验证**（19/20 成功，1 软超时，fallback=0） |
+| OmniDocBench v1.6 全量评测（1651 页） | **进行中**（W7900D 上可 resume；约 220 s/页） |
+| 性能基线与优化对照 | **临时基线**已归档；正式 3 次重复待 GPU 空闲 |
 | vLLM ROCm 后端 | **实验性 / 未验证** |
 
 计划中的能力不得写成已完成。公开指标必须能链接到 `results/` 或 `evidence/` 中的 JSON。
