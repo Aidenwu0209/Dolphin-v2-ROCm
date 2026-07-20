@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv*/
+.python-version
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Model weights and datasets (never commit)
+models/
+weights/
+*.safetensors
+*.bin
+*.pth
+*.gguf
+data/
+datasets/
+OmniDocBench/
+
+# Local run outputs (curated evidence is committed explicitly)
+results/**/pages/
+results/**/raw/
+results/**/checkpoints/
+results/smoke/
+results/canary/
+results/debug/
+*.log
+logs/
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*_token*
+credentials*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
