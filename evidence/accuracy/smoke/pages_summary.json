@@ -1,0 +1,173 @@
+[
+  {
+    "page_id": "page_0",
+    "source_path": "/root/workspace/samples/page_0.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_0.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_0.json",
+    "error": null,
+    "latency_ms": 147142.7,
+    "peak_vram_mb": 8236.4,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 10,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_1",
+    "source_path": "/root/workspace/samples/page_1.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_1.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_1.json",
+    "error": null,
+    "latency_ms": 42217.7,
+    "peak_vram_mb": 8236.4,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 17,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_2",
+    "source_path": "/root/workspace/samples/page_2.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_2.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_2.json",
+    "error": null,
+    "latency_ms": 299892.3,
+    "peak_vram_mb": 8150.6,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 14,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_3",
+    "source_path": "/root/workspace/samples/page_3.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_3.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_3.json",
+    "error": null,
+    "latency_ms": 302830.0,
+    "peak_vram_mb": 8175.2,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 17,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_4",
+    "source_path": "/root/workspace/samples/page_4.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_4.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_4.json",
+    "error": null,
+    "latency_ms": 167777.5,
+    "peak_vram_mb": 7768.2,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 16,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_5",
+    "source_path": "/root/workspace/samples/page_5.jpg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_5.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_5.json",
+    "error": null,
+    "latency_ms": 284675.1,
+    "peak_vram_mb": 8194.9,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 24,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_7",
+    "source_path": "/root/workspace/samples/page_7.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_7.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_7.json",
+    "error": null,
+    "latency_ms": 252412.0,
+    "peak_vram_mb": 8253.8,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 10,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_8",
+    "source_path": "/root/workspace/samples/page_8.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_8.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_8.json",
+    "error": null,
+    "latency_ms": 211552.7,
+    "peak_vram_mb": 8111.1,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 16,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page_9",
+    "source_path": "/root/workspace/samples/page_9.jpeg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/runs/smoke9/markdown/page_9.md",
+    "raw_output_path": "/root/workspace/runs/smoke9/raw/page_9.json",
+    "error": null,
+    "latency_ms": 257230.1,
+    "peak_vram_mb": 8074.3,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 30,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  }
+]

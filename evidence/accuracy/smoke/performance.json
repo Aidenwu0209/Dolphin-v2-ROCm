@@ -1,0 +1,26 @@
+{
+  "label": "run_attached",
+  "generated_at": "2026-07-20T04:13:13Z",
+  "backend": "transformers",
+  "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+  "input_pages": [],
+  "repeats": 1,
+  "model_load_seconds": 4.17,
+  "first_page_latency_ms": null,
+  "median_across_repeats": {
+    "p50_ms": null,
+    "p95_ms": null,
+    "mean_ms": null,
+    "pages_per_second": null,
+    "wall_seconds": 1972.8
+  },
+  "per_repeat": [
+    {
+      "p50_ms": null,
+      "p95_ms": null,
+      "pages_per_second": null,
+      "failures": 0
+    }
+  ],
+  "note": "Single-run attachment; use eval/run_benchmark.py for formal 3-repeat benchmarks."
+}

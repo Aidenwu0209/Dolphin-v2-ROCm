@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-07-20T03:24:41Z",
+  "overall": "PASS",
+  "checks": [
+    {
+      "name": "os",
+      "status": "PASS",
+      "detail": "Ubuntu 24.04.3 LTS",
+      "data": {
+        "system": "Linux",
+        "kernel": "6.8.0-79-generic",
+        "machine": "x86_64",
+        "distribution": "Ubuntu 24.04.3 LTS"
+      }
+    },
+    {
+      "name": "cpu_memory",
+      "status": "PASS",
+      "detail": "AMD EPYC 9334 32-Core Processor x128",
+      "data": {
+        "cpu_count": 128,
+        "mem_total_gb": 503.6,
+        "mem_available_gb": 474.4,
+        "cpu_model": "AMD EPYC 9334 32-Core Processor"
+      }
+    },
+    {
+      "name": "disk",
+      "status": "PASS",
+      "detail": "2045.5 GB free",
+      "data": {
+        "path": "/root",
+        "free_gb": 2045.5,
+        "total_gb": 3575.2
+      }
+    },
+    {
+      "name": "rocm",
+      "status": "PASS",
+      "detail": "ROCm 7.2.0, GPU ['AMD Radeon PRO W7900D'] (gfx1100)",
+      "data": {
+        "rocm_version": "7.2.0",
+        "gpu_arches": [
+          "gfx1100"
+        ],
+        "marketing_names": [
+          "AMD Radeon PRO W7900D"
+        ]
+      }
+    },
+    {
+      "name": "gpu_driver",
+      "status": "PASS",
+      "detail": "amdgpu driver 6.14.14",
+      "data": {
+        "driver_version": "6.14.14"
+      }
+    },
+    {
+      "name": "torch",
+      "status": "PASS",
+      "detail": "torch 2.7.1+rocm7.2.0.git262e50d5 (HIP 7.2.26015-fc0010cf6a) sees AMD Radeon PRO W7900D [gfx1100]",
+      "data": {
+        "torch_version": "2.7.1+rocm7.2.0.git262e50d5",
+        "hip_version": "7.2.26015-fc0010cf6a",
+        "cuda_available": true,
+        "device_count": 1,
+        "gpu_name": "AMD Radeon PRO W7900D",
+        "gpu_arch": "gfx1100",
+        "vram_gb": 48.0
+      }
+    },
+    {
+      "name": "bf16_gpu_compute",
+      "status": "PASS",
+      "detail": "BF16 2048x2048 matmul OK (mean=-0.0012)",
+      "data": {
+        "shape": [
+          2048,
+          2048
+        ],
+        "dtype": "torch.bfloat16",
+        "mean": -0.0012090594973415136
+      }
+    },
+    {
+      "name": "packages",
+      "status": "PASS",
+      "detail": "transformers=4.51.0, accelerate=1.4.0, qwen-vl-utils=0.0.14, numpy=2.5.1, pillow=12.3.0",
+      "data": {
+        "versions": {
+          "transformers": "4.51.0",
+          "accelerate": "1.4.0",
+          "qwen-vl-utils": "0.0.14",
+          "vllm": null,
+          "numpy": "2.5.1",
+          "pillow": "12.3.0"
+        }
+      }
+    },
+    {
+      "name": "model_cache",
+      "status": "PASS",
+      "detail": "1 weight files, 2.34 GB",
+      "data": {
+        "path": "/root/workspace/models/Dolphin-v2",
+        "weight_files": 1,
+        "weights_size_gb": 2.34
+      }
+    },
+    {
+      "name": "env_vars",
+      "status": "PASS",
+      "detail": "no risky ROCm environment overrides set",
+      "data": {
+        "relevant_env": {}
+      }
+    }
+  ],
+  "known_risks": [
+    "PyTorch on ROCm reports devices through the torch.cuda namespace; this is HIP, not NVIDIA CUDA.",
+    "gfx1100 (RDNA3) has no official flash-attention kernel coverage in some libraries; SDPA math paths are used instead."
+  ]
+}
