@@ -51,35 +51,30 @@ if [[ "${SCORE}" != "1" ]]; then
 fi
 
 echo "==> Running official OmniDocBench scorer"
-PRED_DIR="${OUT_DIR}/markdown"
-SCORE_OUT="${OUT_DIR}/metric_result.json"
+SCORE_CONFIG="${SCORE_CONFIG:-${REPO_ROOT}/eval/configs/end2end_rocm.yaml}"
+SCORE_WORKDIR="${OMNIDOCBENCH_SRC}"
 
-# OmniDocBench CLI entrypoints differ slightly across revisions; try common forms.
-if [[ -x "${EVAL_ENV}/bin/omnidocbench" ]]; then
-  "${EVAL_ENV}/bin/omnidocbench" \
-    --pred "${PRED_DIR}" \
-    --gt "${GT_JSON}" \
-    --out "${SCORE_OUT}" \
-    2>&1 | tee -a "${LOG_DIR}/full_score.log"
-elif [[ -f "${OMNIDOCBENCH_SRC}/pdf_validation.py" ]]; then
-  "${EVAL_ENV}/bin/python" "${OMNIDOCBENCH_SRC}/pdf_validation.py" \
-    --pred_path "${PRED_DIR}" \
-    --gt_path "${GT_JSON}" \
-    --output "${SCORE_OUT}" \
-    2>&1 | tee -a "${LOG_DIR}/full_score.log" || true
-  # Fallback: use metrics runner if present
-  if [[ ! -f "${SCORE_OUT}" ]]; then
-    "${EVAL_ENV}/bin/python" - <<PY
-import json, sys
-from pathlib import Path
-print("Scorer entrypoint needs manual wiring for this OmniDocBench revision.", file=sys.stderr)
-print("Predictions are ready at: ${PRED_DIR}", file=sys.stderr)
-sys.exit(2)
-PY
-  fi
-else
-  echo "ERROR: could not locate OmniDocBench scorer entrypoint" >&2
+# Rewrite prediction path in a temp config so OUT_DIR can vary.
+TMP_CFG="$(mktemp)"
+sed "s|data_path: .*/markdown|data_path: ${OUT_DIR}/markdown|" "${SCORE_CONFIG}" > "${TMP_CFG}"
+
+if [[ ! -x "${EVAL_ENV}/bin/omnidocbench-eval" ]]; then
+  echo "ERROR: ${EVAL_ENV}/bin/omnidocbench-eval not found; run scripts/setup_eval_env.sh" >&2
   exit 2
 fi
 
-echo "==> Metrics written to ${SCORE_OUT}"
+(
+  cd "${SCORE_WORKDIR}"
+  "${EVAL_ENV}/bin/omnidocbench-eval" --config "${TMP_CFG}"
+) 2>&1 | tee -a "${LOG_DIR}/full_score.log"
+
+# OmniDocBench writes under result/; copy the metric file into OUT_DIR.
+METRIC_SRC="$(ls -t "${SCORE_WORKDIR}"/result/*metric_result.json 2>/dev/null | head -1 || true)"
+if [[ -n "${METRIC_SRC}" ]]; then
+  cp -f "${METRIC_SRC}" "${OUT_DIR}/metric_result.json"
+  echo "==> Metrics copied to ${OUT_DIR}/metric_result.json"
+else
+  echo "ERROR: could not find metric_result.json under ${SCORE_WORKDIR}/result" >&2
+  exit 3
+fi
+rm -f "${TMP_CFG}"
