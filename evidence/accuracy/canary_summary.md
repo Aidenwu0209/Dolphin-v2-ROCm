@@ -22,3 +22,32 @@ run config.
 
 Machine-readable: [run_summary.json](canary/run_summary.json),
 [failures.json](canary/failures.json).
+
+## Official scorer metrics (canary subset only)
+
+Scored with the pinned OmniDocBench evaluator
+(`2b161d010d2e3aff77a0edef359ea3a6411d23cd`, end2end quick_match) against a
+20-entry GT subset derived from the pinned `OmniDocBench.json` (ground truth
+unmodified; subset file only filters entries). This canary is intentionally
+stratified toward hard buckets (equation_hard / layout_hard / table_hard), so
+these numbers are NOT comparable to full-benchmark leaderboard scores.
+
+| Metric | Value |
+|--------|-------|
+| Text block Edit_dist (page avg, lower better) | 0.2234 |
+| Display formula Edit_dist | 0.2818 |
+| Display formula CDM (higher better) | 0.8842 |
+| Table TEDS (higher better) | 0.1403* |
+| Table Edit_dist | 0.1809 |
+| Reading order Edit_dist | 0.1838 |
+
+\* Only a handful of canary pages contain tables and they come from the
+`table_hard` bucket; treat the TEDS value as a plumbing check, not a quality
+estimate.
+
+Machine-readable: [metric_result.json](canary/metric_result.json),
+[scorer_run_summary.json](canary/scorer_run_summary.json).
+
+Scoring environment note: CDM initially reported 0.0 because Ubuntu 24.04
+ships ImageMagick 6 without the `magick` CLI; fixed with a `magick`→`convert`
+shim (see docs/troubleshooting.md). The re-run produced the values above.

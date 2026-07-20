@@ -69,6 +69,14 @@ scripts/setup_eval_env.sh /root/workspace/envs/odb-eval
 Python 3.11 is preferred; if unavailable, the script falls back to 3.12 and
 logs a warning.
 
+CDM (formula rendering) additionally needs TeX Live (`pdflatex`) and an
+ImageMagick 7 `magick` CLI. On Ubuntu 24.04 (ImageMagick 6) create a shim:
+
+```bash
+printf '#!/bin/sh\nexec convert "$@"\n' > /usr/local/bin/magick
+chmod +x /usr/local/bin/magick
+```
+
 ## 6. Dataset
 
 Download / locate official OmniDocBench v1.6 images and `OmniDocBench.json`.
