@@ -40,14 +40,16 @@ class UtilizationSampler(threading.Thread):
         super().__init__(daemon=True)
         self.interval_s = interval_s
         self.samples: list[dict] = []
-        self._stop = threading.Event()
+        # Must not be named `_stop`: threading.Thread uses that name internally
+        # and overriding it breaks Thread.join().
+        self._stop_event = threading.Event()
 
     def run(self) -> None:
         try:
             import psutil
         except ImportError:
             psutil = None
-        while not self._stop.is_set():
+        while not self._stop_event.is_set():
             sample: dict = {"t": time.time()}
             try:
                 out = subprocess.run(
@@ -65,10 +67,10 @@ class UtilizationSampler(threading.Thread):
             if psutil:
                 sample["cpu_pct"] = psutil.cpu_percent(interval=None)
             self.samples.append(sample)
-            self._stop.wait(self.interval_s)
+            self._stop_event.wait(self.interval_s)
 
     def stop(self) -> dict:
-        self._stop.set()
+        self._stop_event.set()
         self.join(timeout=5)
         gpu = [s["gpu_busy_pct"] for s in self.samples if "gpu_busy_pct" in s]
         cpu = [s["cpu_pct"] for s in self.samples if "cpu_pct" in s]
