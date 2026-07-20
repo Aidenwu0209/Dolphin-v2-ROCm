@@ -1,0 +1,37 @@
+name: Compatibility report
+description: Report AMD GPU / ROCm compatibility findings
+title: "[compat] "
+labels: ["compatibility"]
+body:
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU model
+      placeholder: AMD Radeon PRO W7900D
+    validations:
+      required: true
+  - type: input
+    id: arch
+    attributes:
+      label: GPU architecture
+      placeholder: gfx1100
+    validations:
+      required: true
+  - type: input
+    id: rocm
+    attributes:
+      label: ROCm / HIP / PyTorch versions
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: dolphin-rocm doctor overall and failing checks
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction commands
+    validations:
+      required: true

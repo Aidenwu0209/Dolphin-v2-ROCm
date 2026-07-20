@@ -1,0 +1,56 @@
+name: evidence-validation
+
+on:
+  push:
+    branches: [feat/rocm-adaptation, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install jsonschema pyyaml
+
+      - name: Validate committed evidence/environments
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          path = pathlib.Path('evidence/environments/runtime_attestation.json')
+          if not path.exists():
+              print('No runtime_attestation.json yet; skipping formal result checks')
+              sys.exit(0)
+          data = json.loads(path.read_text())
+          assert data.get('overall') in {'PASS','WARN','FAIL'}
+          print('attestation overall=', data['overall'])
+          PY
+
+      - name: Validate formal result dir if present
+        run: |
+          RESULT=results/omnidocbench/v16/linux-rocm
+          if [[ ! -f "${RESULT}/run_summary.json" ]]; then
+            echo "Formal results not present yet; OK for pre-eval commits"
+            exit 0
+          fi
+          python eval/release_contract.py "${RESULT}" --allow-missing-metrics
+          if [[ -f "${RESULT}/metric_result.json" ]]; then
+            python eval/release_contract.py "${RESULT}"
+          fi
+
+      - name: Forbid placeholder claims in accuracy evidence
+        run: |
+          if [[ -f evidence/accuracy/metric_result.json ]]; then
+            if grep -E 'TODO|PLACEHOLDER|TBD' evidence/accuracy/metric_result.json; then
+              echo "Placeholder markers found in accuracy evidence" >&2
+              exit 1
+            fi
+          fi

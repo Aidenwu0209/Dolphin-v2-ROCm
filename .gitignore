@@ -24,7 +24,9 @@ weights/
 *.gguf
 data/
 datasets/
-OmniDocBench/
+# Upstream dataset checkout only (do not ignore results/omnidocbench/)
+/OmniDocBench/
+**/data/OmniDocBench/
 
 # Local run outputs (curated evidence is committed explicitly)
 results/**/pages/

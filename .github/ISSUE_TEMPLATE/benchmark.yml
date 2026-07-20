@@ -1,0 +1,36 @@
+name: Benchmark / evaluation report
+description: Report OmniDocBench or performance results
+title: "[benchmark] "
+labels: ["benchmark"]
+body:
+  - type: input
+    id: dataset_revision
+    attributes:
+      label: OmniDocBench dataset revision
+    validations:
+      required: true
+  - type: input
+    id: model_revision
+    attributes:
+      label: Dolphin-v2 model revision
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics summary (with links to JSON evidence)
+    validations:
+      required: true
+  - type: textarea
+    id: perf
+    attributes:
+      label: Performance summary (p50/p95/pages/s/VRAM)
+  - type: checkboxes
+    id: contract
+    attributes:
+      label: Release contract
+      options:
+        - label: fallback=0
+        - label: no silent page drops
+        - label: provenance.json present
+        - label: results reconcile with failures.json

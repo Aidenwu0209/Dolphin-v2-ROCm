@@ -31,7 +31,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--platform", default="linux-rocm")
     parser.add_argument("--backend", default=None)
     parser.add_argument("--limit-pages", type=int, default=None)
-    parser.add_argument("--page-list", default=None, help="file with one image filename per line (subset run)")
+    parser.add_argument(
+        "--page-list", default=None, help="file with one image filename per line (subset run)"
+    )
     args = parser.parse_args(argv)
 
     overrides = {}

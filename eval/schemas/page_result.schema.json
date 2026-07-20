@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "page_result.schema.json",
+  "title": "Page result record",
+  "type": "object",
+  "required": ["page_id", "source_path", "status", "backend"],
+  "properties": {
+    "page_id": { "type": "string", "minLength": 1 },
+    "source_path": { "type": "string" },
+    "status": { "type": "string", "enum": ["success", "failed", "skipped", "timeout"] },
+    "backend": { "type": "string" },
+    "markdown_path": { "type": ["string", "null"] },
+    "raw_output_path": { "type": ["string", "null"] },
+    "error": { "type": ["string", "null"] },
+    "latency_ms": { "type": ["number", "null"] },
+    "peak_vram_mb": { "type": ["number", "null"] },
+    "model_revision": { "type": ["string", "null"] },
+    "config_digest": { "type": ["string", "null"] },
+    "fallback": { "type": "boolean" },
+    "attempts": { "type": "integer", "minimum": 1 },
+    "element_count": { "type": ["integer", "null"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "success" } } },
+      "then": {
+        "properties": {
+          "markdown_path": { "type": "string", "minLength": 1 },
+          "error": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "failed" } } },
+      "then": {
+        "properties": { "error": { "type": "string", "minLength": 1 } }
+      }
+    }
+  ]
+}
