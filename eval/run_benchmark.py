@@ -73,9 +73,12 @@ class UtilizationSampler(threading.Thread):
         gpu = [s["gpu_busy_pct"] for s in self.samples if "gpu_busy_pct" in s]
         cpu = [s["cpu_pct"] for s in self.samples if "cpu_pct" in s]
         vram = [s["vram_used_pct"] for s in self.samples if "vram_used_pct" in s]
-        summarize = lambda xs: (
-            {"mean": round(statistics.mean(xs), 1), "max": round(max(xs), 1)} if xs else None
-        )  # noqa: E731
+
+        def summarize(xs: list[float]) -> dict | None:
+            if not xs:
+                return None
+            return {"mean": round(statistics.mean(xs), 1), "max": round(max(xs), 1)}
+
         return {
             "gpu_busy_pct": summarize(gpu),
             "cpu_pct": summarize(cpu),
@@ -166,7 +169,9 @@ def main(argv: list[str] | None = None) -> int:
     finally:
         backend.close()
 
-    median_of = lambda key: round(statistics.median(r[key] for r in repeats if r[key] is not None), 3)  # noqa: E731
+    def median_of(key: str) -> float:
+        return round(statistics.median(r[key] for r in repeats if r[key] is not None), 3)
+
     payload = {
         "label": args.label,
         "generated_at": utc_now(),
@@ -195,7 +200,15 @@ def main(argv: list[str] | None = None) -> int:
         ),
     }
     write_json(args.out, payload)
-    print(json.dumps({k: payload[k] for k in ("label", "model_load_seconds", "first_page_latency_ms", "median_across_repeats")}, indent=2))
+    print(
+        json.dumps(
+            {
+                k: payload[k]
+                for k in ("label", "model_load_seconds", "first_page_latency_ms", "median_across_repeats")
+            },
+            indent=2,
+        )
+    )
     return 0
 
 
