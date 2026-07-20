@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dolphin-v2-rocm"
+version = "0.1.0"
+description = "Dolphin-v2 document parsing on AMD Radeon GPUs (ROCm): adaptation, evaluation, and evidence tooling"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "pyyaml>=6.0",
+    "pillow>=10.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+# Inference extras are installed on the GPU host via scripts/setup_model_env.sh
+# with ROCm wheel pins; they are listed here for documentation completeness.
+inference = [
+    "transformers==4.51.0",
+    "accelerate==1.4.0",
+    "qwen-vl-utils",
+    "psutil",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "jsonschema>=4.21",
+]
+
+[project.scripts]
+dolphin-rocm = "dolphin_v2_rocm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests", "eval"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = [
+    "E501", # long lines allowed in ported upstream parsing logic and prompts
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "gpu: requires a real ROCm GPU (deselected by default in CI)",
+    "slow: long-running tests",
+]
+addopts = "-m 'not gpu'"
