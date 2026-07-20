@@ -8,9 +8,10 @@ OmniDocBench v1.6 评测与性能证据。
 | 模块 | 状态 |
 |------|------|
 | W7900D / gfx1100 / ROCm 7.2 环境诊断 | **已验证** |
-| Transformers ROCm 后端（BF16、SDPA） | **已验证**（真实页面推理） |
-| 多样本 smoke | **进行中 / 主机已验证部分页面** |
-| OmniDocBench v1.6 全量评测 | **进行中** |
+| Transformers ROCm 后端（BF16、SDPA） | **已验证** |
+| 多样本 smoke（9/9，fallback=0） | **已验证** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
+| OmniDocBench v1.6 canary（20 页） | **进行中** |
+| OmniDocBench v1.6 全量评测（1651 页） | **进行中**（长时间任务，可 resume） |
 | 性能基线与优化对照 | **进行中** |
 | vLLM ROCm 后端 | **实验性 / 未验证** |
 

@@ -8,9 +8,10 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | Area | Status |
 |------|--------|
 | Environment doctor on W7900D / gfx1100 / ROCm 7.2 | **Verified** |
-| Transformers ROCm backend (BF16, SDPA) | **Verified** (real page inference) |
-| Multi-page smoke samples | **In progress / verified on host** |
-| OmniDocBench v1.6 full eval | **In progress** |
+| Transformers ROCm backend (BF16, SDPA) | **Verified** |
+| Multi-page smoke (9/9, fallback=0) | **Verified** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
+| OmniDocBench v1.6 canary (20 pages) | **In progress** |
+| OmniDocBench v1.6 full eval (1651 pages) | **In progress** (long-running; resumable) |
 | Performance baseline vs optimized | **In progress** |
 | vLLM ROCm backend | **Experimental / unverified** |
 
