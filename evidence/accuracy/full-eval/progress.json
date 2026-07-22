@@ -1,0 +1,18 @@
+{
+  "updated_at_utc": "2026-07-22T08:23:10Z",
+  "target_pages": 1651,
+  "checkpoint_records": 1265,
+  "success_pages": 1263,
+  "failed_pages": 2,
+  "progress_pct": 76.5,
+  "avg_latency_s": 139.45,
+  "eta_hours_approx": 15.03,
+  "last_success_page_id": "page-bbe2b2d5-1e02-4d53-ba1c-158eaab2e6d5",
+  "failed_page_ids": [
+    "jiaocaineedrop_jiaocai_needrop_en_3063",
+    "newspaper_b615618f3cdb0f2c13ffb5865dea799c_1"
+  ],
+  "local_out_dir": "results/omnidocbench/v16/linux-rocm",
+  "evidence_checkpoint": "evidence/accuracy/full-eval/pages.json",
+  "resume_hint": "Restore evidence/accuracy/full-eval/pages.json to OUT_DIR/checkpoints/pages.json (and rsync markdown/raw if available), then: OUT_DIR=... IMG_DIR=... bash scripts/resume_eval.sh"
+}
