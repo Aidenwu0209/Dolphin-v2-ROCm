@@ -89,6 +89,11 @@ print(
 )
 PY
 
+if [[ "${SKIP_GIT_PUSH:-0}" == "1" ]]; then
+  echo "==> [$(stamp)] local sync only (SKIP_GIT_PUSH=1); skip commit/push"
+  exit 0
+fi
+
 git checkout "${BRANCH}" >/dev/null 2>&1 || true
 git add "${EVIDENCE_DIR}/progress.json" "${EVIDENCE_DIR}/pages.json"
 
