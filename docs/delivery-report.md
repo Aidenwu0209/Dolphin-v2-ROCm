@@ -10,7 +10,7 @@ Evidence: `git branch -vv` → tracks `origin/feat/rocm-adaptation`.
 
 ## 2. Latest commit
 
-`71c5b847dcded20ff23153ced64117db35a56b45` — docs: finalize full OmniDocBench metrics and delivery report
+`e26bb19ac7cc796888facfb5bf29cb84b2bbb0aa`
 
 
 ## 3. GitHub branch link
