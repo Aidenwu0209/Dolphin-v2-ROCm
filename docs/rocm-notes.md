@@ -32,6 +32,16 @@ uses `attn_implementation: sdpa`.
 
 ## vLLM
 
-vLLM is optional and experimental. Transformers is the supported baseline.
-If vLLM fails on this stack, capture three reproductions under
-`reproductions/vllm/` instead of blocking the mainline.
+vLLM is **optional and experimental**. Transformers is the supported baseline.
+
+On this host we verified that the **pip / ROCm 7.2 manylinux wheel path is
+dead** (CUDA wheels from PyPI; no vLLM in AMD's 7.2 index). That is **not** the
+same as “vLLM can never run on gfx1100”.
+
+Remaining unlock paths (not yet claimed as verified here):
+
+1. AMD `rocm/vllm` Docker images with **gfx110X** tags
+2. Source build with `PYTORCH_ROCM_ARCH=gfx1100`
+
+See `evidence/compatibility/vllm-rocm72-gfx1100.md`. If a path fails, keep three
+reproductions under `reproductions/vllm/` and do not block the mainline.
