@@ -20,8 +20,11 @@ Expand `cuda5070ti_weak_pages.txt` later with GT bucket filters when
 1. **Smoke 9** — subset of canary (or full canary 20 if time allows)
 2. **Timeout 2** — same soft-timeout budget as ROCm full-eval
 3. **Weak 22+** — starter list; optionally expand to 36–48 via GT attrs
-4. **Scorer-only TEDS** — re-score existing ROCm preds on CUDA host Python env
-   using the 55-image list (no need to re-infer all 55 if preds already exist)
+4. **Scorer-only TEDS** — re-score existing ROCm preds using the 55-image list
+   (no need to re-infer all 55 if preds already exist). Note: the available
+   5070 Ti host is **native Windows**; the OmniDocBench scorer stack there is
+   unproven, so prefer running this isolation on a Linux host and keep the
+   Windows box for inference parity (see `HOST_WORKSPACE.md`)
 
 ## Pin (parity contract)
 

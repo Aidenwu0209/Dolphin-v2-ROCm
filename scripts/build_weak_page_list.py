@@ -17,7 +17,6 @@ import argparse
 import json
 from pathlib import Path
 
-
 # Buckets that looked weak on ROCm full-eval aggregates (edit_dist / TEDS / CDM).
 # Exact attribute key names follow OmniDocBench v1.6 GT schema.
 DEFAULT_WEAK_HINTS = (
@@ -63,13 +62,7 @@ def main() -> None:
     candidates: list[str] = []
     for rec in records:
         # Tolerate common field names across OmniDocBench exports.
-        name = (
-            rec.get("image_path")
-            or rec.get("img_id")
-            or rec.get("page_id")
-            or rec.get("image")
-            or ""
-        )
+        name = rec.get("image_path") or rec.get("img_id") or rec.get("page_id") or rec.get("image") or ""
         base = Path(str(name)).name
         if not base:
             continue

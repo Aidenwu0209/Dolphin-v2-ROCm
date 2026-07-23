@@ -28,8 +28,9 @@ Before any upstream draft is “ready”:
 
 Routing: Dolphin | transformers | vLLM | ROCm | OmniDocBench.
 
-Drafts: `evidence/upstream-issues/<target>-<short-name>.md`  
-Repros: `reproductions/<target>/<short-name>/`
+Drafts (actual): `docs/upstream-drafts/<short-name>/ISSUE_DRAFT.md`  
+Repro outlines (actual): `docs/upstream-drafts/<short-name>/REPRO.md`; investigation
+notes under `evidence/investigations/<short-name>/`
 
 ## Decision matrix (now)
 
@@ -63,17 +64,18 @@ Phenomenon (evidence path + logs)
 - Hypotheses: CDM shells out to `magick`; IM6-only hosts silently score 0.
 - Isolation: magick on/off ≥3 times on canary/small set; independent of GPU.
 - Owner: `opendatalab/OmniDocBench` (+ local doctor/docs).
-- Outputs:
-  - `reproductions/omnidocbench/cdm-magick/`
-  - `evidence/upstream-issues/omnidocbench-cdm-magick.md` (draft, unpublished)
+- Outputs (done, offline):
+  - `docs/upstream-drafts/cdm-magick/` (ISSUE_DRAFT + REPRO, unpublished)
+  - `evidence/investigations/cdm-magick/NOTES.md`
 
 ### B. TEDS process-join errors
 
 - Inventory ~60 cases from `evidence/accuracy/full-eval/metric_result.json`.
 - Scorer-only reruns on fixed markdown; vary `n_jobs ∈ {1,2,4,8}` ≥3 times.
 - Owner decision after P1 CUDA scorer-only.
-- Outputs: `evidence/investigations/teds-join-process/`,
-  `reproductions/omnidocbench/teds-join-process/`
+- Outputs: inventory done at `evidence/investigations/teds-join/` (60 cases /
+  55 unique images); draft at `docs/upstream-drafts/teds-join/`; scorer-only
+  rerun matrix still pending
 
 ### C. Soft-timeout pages (AMD profiling only in P0)
 
