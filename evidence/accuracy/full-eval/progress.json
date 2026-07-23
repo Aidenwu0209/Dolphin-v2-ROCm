@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-07-23T01:13:54Z",
-  "status": "complete",
-  "chain_status": "CHAIN_COMPLETE",
-  "release_contract": "PASS",
+  "updated_at_utc": "2026-07-23T01:17:53Z",
+  "status": "inference_complete_metrics_pending",
+  "chain_status": "CHAIN_COMPLETE_BUT_SCORER_FAILED_ULIMIT",
+  "release_contract": "PASS_WITH_STALE_CANARY_METRICS_THEN_CORRECTED",
   "target_pages": 1651,
   "checkpoint_records": 1651,
   "success_pages": 1649,
@@ -18,9 +18,11 @@
   "local_out_dir": "results/omnidocbench/v16/linux-rocm",
   "evidence_checkpoint": "evidence/accuracy/full-eval/pages.json",
   "artifacts": [
-    "evidence/accuracy/metric_result.json",
-    "evidence/accuracy/run_summary.json",
-    "evidence/accuracy/full-eval/",
-    "evidence/performance/run_performance.json"
-  ]
+    "evidence/accuracy/full-eval/run_summary.json",
+    "evidence/accuracy/full-eval/pages.json",
+    "evidence/accuracy/full-eval/failures.json",
+    "evidence/performance/baseline.json",
+    "evidence/performance/optimized.json"
+  ],
+  "metrics_note": "First watcher copy used a stale canary metric_result (page_count=20) after omnidocbench-eval crashed with OSError Too many open files. Full rescore launched 2026-07-23 with ulimit -n 65536 and MATCH_WORKERS=4."
 }

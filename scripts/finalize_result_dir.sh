@@ -31,9 +31,17 @@ card = {
 print("wrote", out / "model_card.json")
 PY
 
-if [[ ! -f "${OUT_DIR}/performance.json" && -f "${OUT_DIR}/_run_stats.json" ]]; then
+# Formal release contract requires performance.json with repeats>=3.
+# Prefer the verified 3-repeat baseline; keep the single-run attachment separately.
+FORMAL_PERF="${REPO_ROOT}/evidence/performance/baseline.json"
+if [[ -f "${FORMAL_PERF}" ]]; then
+  cp -f "${FORMAL_PERF}" "${OUT_DIR}/performance.json"
+  echo "wrote ${OUT_DIR}/performance.json (from evidence/performance/baseline.json)"
+fi
+
+if [[ -f "${OUT_DIR}/_run_stats.json" ]]; then
   "${ENV_DIR}/bin/python" - <<PY
-import json, statistics
+import json
 from pathlib import Path
 out = Path("${OUT_DIR}")
 stats = json.loads((out / "_run_stats.json").read_text())
@@ -71,10 +79,10 @@ perf = {
             "failures": stats.get("failed", 0),
         }
     ],
-    "note": "Single-run attachment; use eval/run_benchmark.py for formal 3-repeat benchmarks.",
+    "note": "Single-run attachment; formal 3-repeat benchmarks live in evidence/performance/.",
 }
-(out / "performance.json").write_text(json.dumps(perf, indent=2), encoding="utf-8")
-print("wrote", out / "performance.json")
+(out / "run_attached_performance.json").write_text(json.dumps(perf, indent=2), encoding="utf-8")
+print("wrote", out / "run_attached_performance.json")
 PY
 fi
 

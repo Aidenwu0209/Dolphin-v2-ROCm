@@ -41,7 +41,13 @@ Inference and scoring are separated:
 
 ```bash
 SCORE=1 scripts/run_full_eval.sh
+# or, if inference is already finished:
+MATCH_WORKERS=4 bash scripts/run_full_score.sh
 ```
+
+Raise `ulimit -n` before large scoring runs (the helper scripts do this). A failed
+scorer must **not** copy an older canary `metric_result.json`; `run_full_score.sh`
+archives previous outputs and refuses metrics unless `page_count ≥ 1600`.
 
 ## Release artifacts
 
@@ -54,7 +60,7 @@ Under `results/omnidocbench/v16/linux-rocm/`:
 - `provenance.json`
 - `runtime_attestation.json`
 - `model_card.json`
-- `performance.json`
+- `performance.json` (formal 3-repeat baseline; see also `run_attached_performance.json`)
 
 Validate with:
 

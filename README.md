@@ -11,7 +11,7 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | Transformers ROCm backend (BF16, SDPA) | **Verified** |
 | Multi-page smoke (9/9, fallback=0) | **Verified** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
 | OmniDocBench v1.6 canary (20 pages) | **Verified** (19/20 success, 1 soft-timeout, fallback=0) — [evidence/accuracy/canary/](evidence/accuracy/canary/) |
-| OmniDocBench v1.6 full eval (1651 pages) | **In progress** on W7900D (resumable; ~days at ~220 s/page) |
+| OmniDocBench v1.6 full eval (1651 pages) | **Inference verified** (1649/1651 success, 2 soft-timeouts, fallback=0) — [evidence/accuracy/full-eval/](evidence/accuracy/full-eval/). Official full-set scorer re-run in progress (first attempt hit `ulimit` / copied stale canary metrics; do not treat archived `metric_result.json` as full-set until `scorer_run_summary.page_count ≥ 1600`) |
 | Performance baseline vs optimized (3-repeat) | **Verified** — batch=8 gives +12% pages/s; [evidence/performance/comparison.md](evidence/performance/comparison.md) |
 | vLLM ROCm backend | **Known-incompatible via prebuilt wheels** on this stack (PyPI ships CUDA-only; AMD ROCm 7.2 wheel index has no vLLM) — [evidence/compatibility/vllm-rocm72-gfx1100.md](evidence/compatibility/vllm-rocm72-gfx1100.md) |
 
@@ -88,7 +88,7 @@ Artifacts: `evidence/performance/`.
 | Transformers + ROCm PyTorch 2.7.1 on gfx1100 | Verified |
 | BF16 GPU matmul | Verified |
 | Dolphin-v2 two-stage page parse | Verified (host smoke) |
-| vLLM ROCm | Experimental |
+| vLLM ROCm | Known-incompatible via prebuilt wheels |
 | Other AMD arches | Unverified |
 | NVIDIA CUDA | Out of scope |
 
@@ -96,7 +96,13 @@ Artifacts: `evidence/performance/`.
 
 - First-page latency can be much higher than steady-state pages.
 - Flash-Attention 2 is not assumed available; baseline uses SDPA.
-- Python 3.11 may be unavailable on some hosts; eval env may fall back to 3.12.
+- Python 3.11 may be unavailable on some hosts; eval env may fall back to 3.10/3.12.
+- Full OmniDocBench scoring needs a raised `ulimit -n` (see `scripts/run_full_score.sh`);
+  otherwise the matcher dies with `OSError: Too many open files` and may leave a
+  stale canary `metric_result.json` in place if the watcher copies by mtime alone.
+- Two full-eval pages soft-timed out at 1800s (explicit in `failures.json`).
+- Batch=8 throughput gain is verified; full-set accuracy parity for batch=8 is
+  not yet re-scored (see `ROADMAP.md`).
 
 ## Reproducing results
 
