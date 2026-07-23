@@ -20,11 +20,16 @@ Ideas deferred from the current ROCm adaptation / OmniDocBench phase.
 
 ## Open investigations
 
+- Root-cause ladder + NVIDIA 5070 Ti CUDA parity matrix (plan):
+  [`docs/plans/2026-07-23-rootcause-and-5070ti-matrix.md`](docs/plans/2026-07-23-rootcause-and-5070ti-matrix.md);
+  offline index: [`evidence/investigations/INDEX.md`](evidence/investigations/INDEX.md)
 - vLLM on gfx1100: host pip/ROCm 7.2 wheels ruled out (see
   `evidence/compatibility/vllm-rocm72-gfx1100.md`). **Rewrite / next probe:**
   AMD `rocm/vllm` gfx110X container, then Dolphin smoke vs Transformers;
   fallback source build with `PYTORCH_ROCM_ARCH=gfx1100`
 - TunableOps and `torch.compile` net benefit after accuracy checks
 - Scorer packaging differences across OmniDocBench revisions
+  (CDM/`magick`, TEDS process-join) — confirm on CUDA before upstream drafts
 - OmniDocBench metric parity check for the batch=8 performance profile
   (throughput verified; full-set accuracy not re-scored under batch=8)
+- Soft-timeout pages vs CUDA: AMD-specific long-tail vs model-hard pages
