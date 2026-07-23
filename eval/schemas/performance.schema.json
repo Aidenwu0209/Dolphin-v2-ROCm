@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "performance.schema.json",
+  "title": "Benchmark result",
+  "type": "object",
+  "required": [
+    "label",
+    "generated_at",
+    "backend",
+    "config_digest",
+    "input_pages",
+    "repeats",
+    "model_load_seconds",
+    "first_page_latency_ms",
+    "median_across_repeats",
+    "per_repeat"
+  ],
+  "properties": {
+    "label": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "backend": { "type": "string" },
+    "config_digest": { "type": "string", "pattern": "^sha256:" },
+    "input_pages": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "repeats": { "type": "integer", "minimum": 3 },
+    "warmup_pages": { "type": "integer", "minimum": 0 },
+    "model_load_seconds": { "type": "number" },
+    "first_page_latency_ms": { "type": ["number", "null"] },
+    "median_across_repeats": {
+      "type": "object",
+      "required": ["p50_ms", "p95_ms", "mean_ms", "pages_per_second", "wall_seconds"],
+      "properties": {
+        "p50_ms": { "type": "number" },
+        "p95_ms": { "type": "number" },
+        "mean_ms": { "type": "number" },
+        "pages_per_second": { "type": "number" },
+        "wall_seconds": { "type": "number" }
+      }
+    },
+    "per_repeat": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["p50_ms", "p95_ms", "pages_per_second", "failures"],
+        "properties": {
+          "failures": { "type": "integer" }
+        }
+      }
+    },
+    "provenance": { "type": "object" }
+  }
+}

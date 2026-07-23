@@ -1,0 +1,18 @@
+Dolphin-v2 model weights and associated model materials are NOT licensed under
+the same terms as the adaptation code in this repository.
+
+Upstream model repository:
+  https://huggingface.co/ByteDance/Dolphin-v2
+
+The LICENSE file distributed with the pinned model revision
+(c37c62768c644bb594da4283149c627765aa80f3) is the Qwen RESEARCH LICENSE
+AGREEMENT (Alibaba Cloud). Key implications observed from that text:
+
+- Grant is for NON-COMMERCIAL purposes (research / evaluation) unless a
+  separate commercial license is obtained from the rights holder.
+- Redistribution of Materials must retain the license and attribution notice.
+- Commercial use requires requesting a license from the rights holder.
+
+This file is a pointer and summary for operators of this repository. It is not
+legal advice and does not modify upstream license terms. Always consult the
+LICENSE file shipped with the model revision you download.

@@ -24,7 +24,9 @@ weights/
 *.gguf
 data/
 datasets/
-OmniDocBench/
+# Upstream dataset checkout only (do not ignore results/omnidocbench/)
+/OmniDocBench/
+**/data/OmniDocBench/
 
 # Local run outputs (curated evidence is committed explicitly)
 results/**/pages/
@@ -49,3 +51,6 @@ credentials*
 .DS_Store
 .idea/
 .vscode/
+
+# Large prediction dumps (keep locally / on GPU host)
+results/**/markdown/

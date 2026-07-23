@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "provenance.schema.json",
+  "title": "Result provenance",
+  "type": "object",
+  "required": ["generated_at", "code", "model", "dataset", "config_digest", "environment"],
+  "properties": {
+    "generated_at": { "type": "string" },
+    "code": {
+      "type": "object",
+      "required": ["repository", "commit"],
+      "properties": {
+        "repository": { "type": "string" },
+        "commit": { "type": ["string", "null"], "pattern": "^[0-9a-f]{40}$" }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": ["repo", "revision"],
+      "properties": {
+        "repo": { "type": ["string", "null"] },
+        "revision": { "type": ["string", "null"], "pattern": "^[0-9a-f]{40}$" },
+        "local_path": { "type": ["string", "null"] },
+        "file_digests": { "type": "object" }
+      }
+    },
+    "dataset": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "revision": { "type": ["string", "null"] }
+      }
+    },
+    "scorer": {
+      "type": "object",
+      "properties": {
+        "repo": { "type": ["string", "null"] },
+        "commit": { "type": ["string", "null"] }
+      }
+    },
+    "config_digest": { "type": ["string", "null"], "pattern": "^sha256:" },
+    "environment": {
+      "type": "object",
+      "required": ["python", "platform"],
+      "properties": {
+        "python": { "type": "string" },
+        "platform": { "type": "string" },
+        "torch": { "type": ["string", "null"] },
+        "hip": { "type": ["string", "null"] },
+        "gpu": { "type": ["string", "null"] },
+        "gpu_arch": { "type": ["string", "null"] },
+        "packages": { "type": "object" }
+      }
+    }
+  }
+}

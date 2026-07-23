@@ -1,0 +1,18 @@
+# Canary config: a fixed 20-page stratified subset of OmniDocBench v1.6.
+# Used to validate scorer-facing output format before a full run.
+backend: transformers
+model_path: /root/workspace/models/Dolphin-v2
+model_revision: c37c62768c644bb594da4283149c627765aa80f3
+dataset_revision: aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec
+dtype: bfloat16
+device: cuda
+max_new_tokens: 4096
+max_batch_size: 4
+attn_implementation: sdpa
+resize_max_size: 1600
+post_process: false
+limit_pages: 20
+page_timeout_seconds: 1800
+generation_max_time_seconds: 900
+max_retries_per_page: 1
+allow_cpu_fallback: false

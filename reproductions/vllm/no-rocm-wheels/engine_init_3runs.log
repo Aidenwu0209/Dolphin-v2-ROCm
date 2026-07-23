@@ -1,0 +1,18 @@
+=== reproduction run 1: 2026-07-20T08:23:20Z ===
+torch: 2.11.0+cu130 | hip: None | cuda.is_available: False
+INFO 07-20 08:23:25 [importing.py:53] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 07-20 08:23:25 [importing.py:88] Triton not installed or not compatible; certain GPU-related functions will not be available.
+INFO 07-20 08:23:26 [api_utils.py:273] non-default args: {'max_model_len': 4096, 'gpu_memory_utilization': 0.2, 'disable_log_stats': True, 'model': '/root/workspace/models/Dolphin-v2'}
+ENGINE_INIT_FAILED: RuntimeError Device string must not be empty
+=== reproduction run 2: 2026-07-20T08:23:27Z ===
+torch: 2.11.0+cu130 | hip: None | cuda.is_available: False
+INFO 07-20 08:23:32 [importing.py:53] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 07-20 08:23:32 [importing.py:88] Triton not installed or not compatible; certain GPU-related functions will not be available.
+INFO 07-20 08:23:33 [api_utils.py:273] non-default args: {'max_model_len': 4096, 'gpu_memory_utilization': 0.2, 'disable_log_stats': True, 'model': '/root/workspace/models/Dolphin-v2'}
+ENGINE_INIT_FAILED: RuntimeError Device string must not be empty
+=== reproduction run 3: 2026-07-20T08:23:34Z ===
+torch: 2.11.0+cu130 | hip: None | cuda.is_available: False
+INFO 07-20 08:23:39 [importing.py:53] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 07-20 08:23:39 [importing.py:88] Triton not installed or not compatible; certain GPU-related functions will not be available.
+INFO 07-20 08:23:40 [api_utils.py:273] non-default args: {'max_model_len': 4096, 'gpu_memory_utilization': 0.2, 'disable_log_stats': True, 'model': '/root/workspace/models/Dolphin-v2'}
+ENGINE_INIT_FAILED: RuntimeError Device string must not be empty

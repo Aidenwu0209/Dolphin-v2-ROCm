@@ -1,0 +1,18 @@
+{
+  "total": 9,
+  "succeeded": 9,
+  "failed": 0,
+  "skipped": 0,
+  "fallback": 0,
+  "started_at": "2026-07-20T03:40:21Z",
+  "finished_at": "2026-07-20T04:13:13Z",
+  "duration_seconds": 1972.8,
+  "backend": "transformers",
+  "platform": "linux-rocm",
+  "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "dataset_revision": null,
+  "output_dir": "/root/workspace/runs/smoke9",
+  "config_digest": "sha256:a4e8154019f1c2de5a6f927c026c5b4b00c01e21530b09746af31bf63f01d439",
+  "model_load_seconds": 4.17,
+  "pages_missing_records": []
+}

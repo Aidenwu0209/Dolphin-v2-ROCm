@@ -1,0 +1,28 @@
+{
+  "total": 1651,
+  "succeeded": 1649,
+  "failed": 2,
+  "skipped": 0,
+  "fallback": 0,
+  "started_at": "2026-07-20T06:24:55Z",
+  "finished_at": "2026-07-22T15:45:38Z",
+  "duration_seconds": 206443.2,
+  "backend": "transformers",
+  "platform": "linux-rocm",
+  "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+  "output_dir": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm",
+  "config_digest": "sha256:a42526e2c99517f5dd3ae062481eea8dde632c39856f60b8463fae2e0760f4b8",
+  "model_load_seconds": 4.12,
+  "pages_missing_records": [],
+  "output_completeness": {
+    "pages": 1651,
+    "markdown_files": 1650,
+    "explicit_failures": 2,
+    "missing": [
+      "PPT_1001115_eng_page_003"
+    ],
+    "empty": [],
+    "complete": false
+  }
+}

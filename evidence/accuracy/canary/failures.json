@@ -1,0 +1,21 @@
+[
+  {
+    "page_id": "jiaocaineedrop_jiaocai_needrop_en_2263",
+    "source_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm-canary/_subset_inputs/jiaocaineedrop_jiaocai_needrop_en_2263.jpg",
+    "status": "timeout",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm-canary/markdown/jiaocaineedrop_jiaocai_needrop_en_2263.md",
+    "raw_output_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm-canary/raw/jiaocaineedrop_jiaocai_needrop_en_2263.json",
+    "error": "page exceeded timeout of 900s (took 1664.4s)",
+    "latency_ms": 1664365.4,
+    "peak_vram_mb": 8563.3,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:fee23a0928442a4fb946ba52b00fa9c44f5cfca23d661e0a91d547c5dd800eb4",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 64,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  }
+]

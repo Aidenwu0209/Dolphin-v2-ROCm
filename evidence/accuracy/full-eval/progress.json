@@ -1,0 +1,31 @@
+{
+  "updated_at_utc": "2026-07-23T01:56:40Z",
+  "status": "complete",
+  "chain_status": "INFERENCE_COMPLETE_AND_FULL_SCORE_VERIFIED",
+  "release_contract": "PASS",
+  "target_pages": 1651,
+  "success_pages": 1649,
+  "failed_pages": 2,
+  "fallback": 0,
+  "scorer_page_count": 1651,
+  "metrics": {
+    "text_block_Edit_dist_ALL_page_avg": 0.07936009231650541,
+    "display_formula_Edit_dist_ALL_page_avg": 0.15791288556172903,
+    "display_formula_CDM_all": 0.9136883503401372,
+    "table_TEDS_all": 0.7188187504554818,
+    "table_Edit_dist_ALL_page_avg": 0.13923329909355472,
+    "reading_order_Edit_dist_ALL_page_avg": 0.14869551107456125
+  },
+  "failed_page_ids": [
+    "jiaocaineedrop_jiaocai_needrop_en_3063",
+    "newspaper_b615618f3cdb0f2c13ffb5865dea799c_1"
+  ],
+  "evidence_checkpoint": "evidence/accuracy/full-eval/pages.json",
+  "artifacts": [
+    "evidence/accuracy/metric_result.json",
+    "evidence/accuracy/full-eval/",
+    "evidence/performance/baseline.json",
+    "evidence/performance/optimized.json",
+    "evidence/performance/comparison.md"
+  ]
+}

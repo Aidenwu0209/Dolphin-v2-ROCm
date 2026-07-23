@@ -1,0 +1,40 @@
+[
+  {
+    "page_id": "jiaocaineedrop_jiaocai_needrop_en_3063",
+    "source_path": "/root/workspace/data/OmniDocBench/images/jiaocaineedrop_jiaocai_needrop_en_3063.jpg",
+    "status": "timeout",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm/markdown/jiaocaineedrop_jiaocai_needrop_en_3063.md",
+    "raw_output_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm/raw/jiaocaineedrop_jiaocai_needrop_en_3063.json",
+    "error": "page exceeded timeout of 1800s (took 2503.3s)",
+    "latency_ms": 2503339.5,
+    "peak_vram_mb": 8151.1,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a42526e2c99517f5dd3ae062481eea8dde632c39856f60b8463fae2e0760f4b8",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 40,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "newspaper_b615618f3cdb0f2c13ffb5865dea799c_1",
+    "source_path": "/root/workspace/data/OmniDocBench/images/newspaper_b615618f3cdb0f2c13ffb5865dea799c_1.jpg",
+    "status": "timeout",
+    "backend": "transformers",
+    "markdown_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm/markdown/newspaper_b615618f3cdb0f2c13ffb5865dea799c_1.md",
+    "raw_output_path": "/root/workspace/Dolphin-v2-ROCm/results/omnidocbench/v16/linux-rocm/raw/newspaper_b615618f3cdb0f2c13ffb5865dea799c_1.json",
+    "error": "page exceeded timeout of 1800s (took 1976.6s)",
+    "latency_ms": 1976615.0,
+    "peak_vram_mb": 8110.0,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:a42526e2c99517f5dd3ae062481eea8dde632c39856f60b8463fae2e0760f4b8",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 121,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  }
+]

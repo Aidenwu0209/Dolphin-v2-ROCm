@@ -1,0 +1,45 @@
+{
+  "project": "dolphin-v2-rocm",
+  "generated_for": "AMD Radeon PRO W7900D / gfx1100 / ROCm 7.2.0",
+  "python": {
+    "model_env": "3.12",
+    "eval_env_preferred": "3.11",
+    "eval_env_fallback": "3.12"
+  },
+  "model": {
+    "repo": "ByteDance/Dolphin-v2",
+    "revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "local_path_convention": "/root/workspace/models/Dolphin-v2"
+  },
+  "dolphin_upstream": {
+    "repo": "https://github.com/bytedance/Dolphin",
+    "note": "Transformers backend follows demo_page.py two-stage layout+content flow"
+  },
+  "dataset": {
+    "name": "opendatalab/OmniDocBench",
+    "version_label": "v1.6",
+    "revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+    "expected_pages": 1651,
+    "note": "Official page count must follow the pinned revision manifest, not this hint alone"
+  },
+  "rocm": {
+    "system_rocm": "7.2.0",
+    "pytorch": "2.7.1+rocm7.2.0.git262e50d5",
+    "torchvision": "0.22.1+rocm7.2.0.git59a3e1f9",
+    "triton": "3.3.1+rocm7.2.0.git28a7371e",
+    "wheel_index": "https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/",
+    "hip_version_observed": "7.2.26015-fc0010cf6a"
+  },
+  "python_packages": {
+    "transformers": "4.51.0",
+    "accelerate": "1.4.0",
+    "qwen-vl-utils": "0.0.14"
+  },
+  "backends": {
+    "transformers": "supported",
+    "vllm": "experimental"
+  },
+  "forbidden_defaults": [
+    "HSA_OVERRIDE_GFX_VERSION"
+  ]
+}

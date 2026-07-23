@@ -1,0 +1,9 @@
+{
+  "repo": "ByteDance/Dolphin-v2",
+  "revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "local_path": "/root/workspace/models/Dolphin-v2",
+  "license_pointer": "MODEL_LICENSE",
+  "architecture": "Qwen2.5-VL based Dolphin-v2",
+  "dtype": "bfloat16",
+  "backend_baseline": "transformers"
+}

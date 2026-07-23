@@ -1,0 +1,27 @@
+Dolphin-v2-ROCm
+Copyright (c) 2026 Dolphin-v2-ROCm contributors
+
+This repository contains original adaptation, evaluation, and evidence tooling
+for running Dolphin-v2 on AMD ROCm platforms.
+
+Third-party components and materials:
+
+1) Dolphin upstream code and demos
+   https://github.com/bytedance/Dolphin
+   Refer to the upstream repository for code license terms.
+
+2) Dolphin-v2 model weights (ByteDance/Dolphin-v2)
+   Distributed under the Qwen RESEARCH LICENSE AGREEMENT.
+   See MODEL_LICENSE in this repository and the LICENSE file in the model
+   revision for authoritative terms. Model weights are not redistributed here.
+
+3) OmniDocBench dataset and evaluator
+   https://github.com/opendatalab/OmniDocBench
+   Dataset and scorer are used under their upstream terms; dataset files are
+   not committed to this repository.
+
+4) PyTorch ROCm, Transformers, and related Python packages
+   Distributed under their respective upstream licenses.
+
+"Qwen is licensed under the Qwen RESEARCH LICENSE AGREEMENT, Copyright (c)
+Alibaba Cloud. All Rights Reserved."

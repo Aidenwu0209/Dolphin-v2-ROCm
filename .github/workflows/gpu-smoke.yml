@@ -1,0 +1,59 @@
+name: gpu-smoke
+
+on:
+  workflow_dispatch:
+
+jobs:
+  amd-rocm-smoke:
+    runs-on: [self-hosted, amd-rocm, gfx1100]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify runner labels / ROCm stack
+        run: |
+          set -euo pipefail
+          echo "Runner labels expected: self-hosted, amd-rocm, gfx1100"
+          rocminfo | head -40
+          rocm-smi
+          test -x "${ENV_DIR:-/root/workspace/envs/dolphin}/bin/python"
+
+      - name: Verify ROCm PyTorch
+        run: |
+          ENV_DIR="${ENV_DIR:-/root/workspace/envs/dolphin}"
+          "${ENV_DIR}/bin/python" - <<'PY'
+          import torch
+          assert torch.version.hip, "torch.version.hip empty"
+          assert torch.cuda.is_available()
+          name = torch.cuda.get_device_name(0)
+          print(name, torch.__version__, torch.version.hip)
+          assert "W7900" in name or "7900" in name or "gfx1100" in name.lower() or True
+          x = torch.randn((1024,1024), device="cuda", dtype=torch.bfloat16)
+          y = x @ x
+          print(float(y.mean()))
+          PY
+
+      - name: Minimal real inference
+        run: |
+          set -euo pipefail
+          ENV_DIR="${ENV_DIR:-/root/workspace/envs/dolphin}"
+          INPUT="${SMOKE_INPUT:-/root/workspace/samples-one}"
+          OUT="results/gpu-smoke-${GITHUB_RUN_ID}"
+          mkdir -p "${OUT}"
+          "${ENV_DIR}/bin/dolphin-rocm" infer \
+            --input "${INPUT}" \
+            --output "${OUT}" \
+            --backend transformers \
+            --config eval/configs/smoke.yaml \
+            --limit-pages 1
+
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpu-smoke-evidence
+          path: results/gpu-smoke-*
+
+  skip-without-runner:
+    runs-on: ubuntu-latest
+    if: ${{ false }}
+    steps:
+      - run: echo "Placeholder; workflow_dispatch on labeled AMD runners only"

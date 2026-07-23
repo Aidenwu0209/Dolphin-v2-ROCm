@@ -1,0 +1,188 @@
+{
+  "label": "optimized",
+  "generated_at": "2026-07-20T06:24:54Z",
+  "backend": "transformers",
+  "config_digest": "sha256:576d26060e79b9acc7b4956d824cc1f2cc07cc2566d9281ae29ae0a4baf67a5d",
+  "config": {
+    "backend": "transformers",
+    "model_path": "/root/workspace/models/Dolphin-v2",
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "dtype": "bfloat16",
+    "device": "cuda",
+    "max_new_tokens": 4096,
+    "max_batch_size": 8,
+    "attn_implementation": "sdpa",
+    "layout_prompt": "Parse the reading order of this document.",
+    "prompts": {
+      "tab": "Parse the table in the image.",
+      "equ": "Read formula in the image.",
+      "code": "Read code in the image.",
+      "text": "Read text in the image."
+    },
+    "resize_max_size": 1600,
+    "post_process": false,
+    "limit_pages": 3,
+    "page_timeout_seconds": 1800,
+    "max_retries_per_page": 1,
+    "save_layout_visualization": false,
+    "allow_cpu_fallback": false,
+    "seed": 42,
+    "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+    "generation_max_time_seconds": 900,
+    "optimization_flags": {
+      "larger_element_batch": true
+    }
+  },
+  "input_pages": [
+    "page_0.jpeg",
+    "page_1.png",
+    "page_2.jpeg"
+  ],
+  "warmup_pages": 1,
+  "repeats": 3,
+  "model_load_seconds": 6.93,
+  "first_page_latency_ms": 94473.8,
+  "median_across_repeats": {
+    "p50_ms": 38014.4,
+    "p95_ms": 38089.1,
+    "mean_ms": 35766.7,
+    "pages_per_second": 0.028,
+    "wall_seconds": 107.3
+  },
+  "per_repeat": [
+    {
+      "latencies_ms": [
+        31203.9,
+        88457.3,
+        99864.5
+      ],
+      "p50_ms": 88457.3,
+      "p95_ms": 98723.8,
+      "mean_ms": 73175.2,
+      "pages_per_second": 0.0137,
+      "wall_seconds": 219.5,
+      "peak_vram_mb": 8341.7,
+      "failures": 0,
+      "utilization": {
+        "gpu_busy_pct": {
+          "mean": 98.1,
+          "max": 100.0
+        },
+        "cpu_pct": {
+          "mean": 5.4,
+          "max": 6.7
+        },
+        "vram_used_pct": {
+          "mean": 19.3,
+          "max": 21.0
+        },
+        "n_samples": 103
+      }
+    },
+    {
+      "latencies_ms": [
+        31194.9,
+        38100.1,
+        37990.4
+      ],
+      "p50_ms": 37990.4,
+      "p95_ms": 38089.1,
+      "mean_ms": 35761.8,
+      "pages_per_second": 0.028,
+      "wall_seconds": 107.3,
+      "peak_vram_mb": 8342.0,
+      "failures": 0,
+      "utilization": {
+        "gpu_busy_pct": {
+          "mean": 95.1,
+          "max": 99.0
+        },
+        "cpu_pct": {
+          "mean": 5.6,
+          "max": 7.1
+        },
+        "vram_used_pct": {
+          "mean": 21.8,
+          "max": 24.0
+        },
+        "n_samples": 51
+      }
+    },
+    {
+      "latencies_ms": [
+        31205.2,
+        38080.4,
+        38014.4
+      ],
+      "p50_ms": 38014.4,
+      "p95_ms": 38073.8,
+      "mean_ms": 35766.7,
+      "pages_per_second": 0.028,
+      "wall_seconds": 107.3,
+      "peak_vram_mb": 8342.0,
+      "failures": 0,
+      "utilization": {
+        "gpu_busy_pct": {
+          "mean": 94.5,
+          "max": 99.0
+        },
+        "cpu_pct": {
+          "mean": 5.6,
+          "max": 6.9
+        },
+        "vram_used_pct": {
+          "mean": 24.0,
+          "max": 24.0
+        },
+        "n_samples": 51
+      }
+    }
+  ],
+  "provenance": {
+    "generated_at": "2026-07-20T06:24:54Z",
+    "code": {
+      "repository": "https://github.com/Aidenwu0209/Dolphin-v2-ROCm",
+      "commit": "c1ed33ad88fabfdf0d979b917ef8a717e2fd6221"
+    },
+    "model": {
+      "repo": "ByteDance/Dolphin-v2",
+      "revision": "c37c62768c644bb594da4283149c627765aa80f3",
+      "local_path": "/root/workspace/models/Dolphin-v2",
+      "file_digests": {
+        "config.json": "sha256:7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+        "model.safetensors.index.json": "sha256:eafcf7eb80f0e63f73ef902b792726372d9a5ac90f7c724898006882705360da",
+        "preprocessor_config.json": "sha256:f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+        "generation_config.json": "sha256:533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9",
+        "tokenizer_config.json": "sha256:7d0fc4691628c9f6b0c77f8138a80517896a307e074dd5ac87e279ea85515774"
+      }
+    },
+    "dataset": {
+      "name": null,
+      "revision": null
+    },
+    "scorer": {
+      "repo": null,
+      "commit": null
+    },
+    "config": {},
+    "config_digest": "sha256:576d26060e79b9acc7b4956d824cc1f2cc07cc2566d9281ae29ae0a4baf67a5d",
+    "environment": {
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-79-generic-x86_64-with-glibc2.39",
+      "torch": "2.7.1+rocm7.2.0.git262e50d5",
+      "hip": "7.2.26015-fc0010cf6a",
+      "gpu": "AMD Radeon PRO W7900D",
+      "gpu_arch": "gfx1100",
+      "vram_gb": 48.0,
+      "packages": {
+        "transformers": "4.51.0",
+        "accelerate": "1.4.0",
+        "qwen-vl-utils": "0.0.14",
+        "tokenizers": "0.21.4",
+        "numpy": "2.5.1",
+        "pillow": "12.3.0",
+        "vllm": null
+      }
+    }
+  }
+}
