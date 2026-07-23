@@ -1,28 +1,31 @@
 {
-  "updated_at_utc": "2026-07-23T01:17:53Z",
-  "status": "inference_complete_metrics_pending",
-  "chain_status": "CHAIN_COMPLETE_BUT_SCORER_FAILED_ULIMIT",
-  "release_contract": "PASS_WITH_STALE_CANARY_METRICS_THEN_CORRECTED",
+  "updated_at_utc": "2026-07-23T01:56:40Z",
+  "status": "complete",
+  "chain_status": "INFERENCE_COMPLETE_AND_FULL_SCORE_VERIFIED",
+  "release_contract": "PASS",
   "target_pages": 1651,
-  "checkpoint_records": 1651,
   "success_pages": 1649,
   "failed_pages": 2,
-  "progress_pct": 99.88,
-  "avg_latency_s": 122.94,
-  "eta_hours_approx": 0.0,
-  "last_success_page_id": "yanbaor2_yanbaoPPT_916",
+  "fallback": 0,
+  "scorer_page_count": 1651,
+  "metrics": {
+    "text_block_Edit_dist_ALL_page_avg": 0.07936009231650541,
+    "display_formula_Edit_dist_ALL_page_avg": 0.15791288556172903,
+    "display_formula_CDM_all": 0.9136883503401372,
+    "table_TEDS_all": 0.7188187504554818,
+    "table_Edit_dist_ALL_page_avg": 0.13923329909355472,
+    "reading_order_Edit_dist_ALL_page_avg": 0.14869551107456125
+  },
   "failed_page_ids": [
     "jiaocaineedrop_jiaocai_needrop_en_3063",
     "newspaper_b615618f3cdb0f2c13ffb5865dea799c_1"
   ],
-  "local_out_dir": "results/omnidocbench/v16/linux-rocm",
   "evidence_checkpoint": "evidence/accuracy/full-eval/pages.json",
   "artifacts": [
-    "evidence/accuracy/full-eval/run_summary.json",
-    "evidence/accuracy/full-eval/pages.json",
-    "evidence/accuracy/full-eval/failures.json",
+    "evidence/accuracy/metric_result.json",
+    "evidence/accuracy/full-eval/",
     "evidence/performance/baseline.json",
-    "evidence/performance/optimized.json"
-  ],
-  "metrics_note": "First watcher copy used a stale canary metric_result (page_count=20) after omnidocbench-eval crashed with OSError Too many open files. Full rescore launched 2026-07-23 with ulimit -n 65536 and MATCH_WORKERS=4."
+    "evidence/performance/optimized.json",
+    "evidence/performance/comparison.md"
+  ]
 }

@@ -27,3 +27,4 @@ Ideas deferred from the current ROCm adaptation / OmniDocBench phase.
 - TunableOps and `torch.compile` net benefit after accuracy checks
 - Scorer packaging differences across OmniDocBench revisions
 - OmniDocBench metric parity check for the batch=8 performance profile
+  (throughput verified; full-set accuracy not re-scored under batch=8)

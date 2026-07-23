@@ -11,7 +11,7 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | Transformers ROCm backend (BF16, SDPA) | **Verified** |
 | Multi-page smoke (9/9, fallback=0) | **Verified** — [evidence/accuracy/smoke/](evidence/accuracy/smoke/) |
 | OmniDocBench v1.6 canary (20 pages) | **Verified** (19/20 success, 1 soft-timeout, fallback=0) — [evidence/accuracy/canary/](evidence/accuracy/canary/) |
-| OmniDocBench v1.6 full eval (1651 pages) | **Inference verified** (1649/1651 success, 2 soft-timeouts, fallback=0) — [evidence/accuracy/full-eval/](evidence/accuracy/full-eval/). Official full-set scorer re-run in progress (first attempt hit `ulimit` / copied stale canary metrics; do not treat archived `metric_result.json` as full-set until `scorer_run_summary.page_count ≥ 1600`) |
+| OmniDocBench v1.6 full eval (1651 pages) | **Verified** (1649/1651 success, 2 soft-timeouts, fallback=0; official scorer `page_count=1651`) — [evidence/accuracy/full-eval/](evidence/accuracy/full-eval/) |
 | Performance baseline vs optimized (3-repeat) | **Verified** — batch=8 gives +12% pages/s; [evidence/performance/comparison.md](evidence/performance/comparison.md) |
 | vLLM ROCm backend | **Known-incompatible via prebuilt wheels** on this stack (PyPI ships CUDA-only; AMD ROCm 7.2 wheel index has no vLLM) — [evidence/compatibility/vllm-rocm72-gfx1100.md](evidence/compatibility/vllm-rocm72-gfx1100.md) |
 
@@ -26,7 +26,22 @@ under `results/` or `evidence/`.
 - ROCm: 7.2.0 / amdgpu 6.14.14
 - Evidence: [`evidence/environments/runtime_attestation.json`](evidence/environments/runtime_attestation.json)
 
-## Why this project
+## Main OmniDocBench v1.6 results (full set)
+
+Evidence: [`evidence/accuracy/metric_result.json`](evidence/accuracy/metric_result.json),
+[`evidence/accuracy/full-eval/`](evidence/accuracy/full-eval/).
+
+| Metric | Value |
+|--------|------:|
+| Text block Edit_dist ↓ | 0.0794 |
+| Display formula Edit_dist ↓ | 0.1579 |
+| Display formula CDM ↑ | 0.9137 |
+| Table TEDS ↑ | 0.7188 |
+| Table Edit_dist ↓ | 0.1392 |
+| Reading order Edit_dist ↓ | 0.1487 |
+
+Performance (formal 3-repeat, batch 4→8): +12% pages/s —
+[`evidence/performance/comparison.md`](evidence/performance/comparison.md).
 
 Upstream Dolphin examples target CUDA hosts. This repository isolates a ROCm
 stack, refuses silent CPU fallback, pins model/data/tooling revisions, and

@@ -1672,5 +1672,5 @@
       "failures": 2
     }
   ],
-  "note": "Single-run attachment; use eval/run_benchmark.py for formal 3-repeat benchmarks."
+  "note": "Single-run attachment; formal 3-repeat benchmarks live in evidence/performance/."
 }
