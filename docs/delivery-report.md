@@ -10,7 +10,8 @@ Evidence: `git branch -vv` → tracks `origin/feat/rocm-adaptation`.
 
 ## 2. Latest commit
 
-See repository HEAD after the wrap-up push that lands this file. Prior verified tip before this report commit: `6f1566f` (scorer hardening). Full-metric archive commit updates HEAD.
+`71c5b847dcded20ff23153ced64117db35a56b45` — docs: finalize full OmniDocBench metrics and delivery report
+
 
 ## 3. GitHub branch link
 
