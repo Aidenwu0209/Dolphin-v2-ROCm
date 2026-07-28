@@ -104,6 +104,23 @@ def validate_release_dir(result_dir: str | Path, *, require_metrics: bool = True
         )
     if fallback != 0:
         problems.append(f"official run requires fallback=0, got {fallback}")
+
+    output_completeness = summary.get("output_completeness")
+    if isinstance(output_completeness, dict) and output_completeness.get("complete") is False:
+        details: list[str] = []
+        for key, label in (
+            ("missing", "missing markdown"),
+            ("empty", "empty markdown"),
+        ):
+            page_ids = output_completeness.get(key)
+            if isinstance(page_ids, list) and page_ids:
+                preview = ", ".join(str(page_id) for page_id in page_ids[:5])
+                if len(page_ids) > 5:
+                    preview += f", ... (+{len(page_ids) - 5} more)"
+                details.append(f"{label}: {preview}")
+        suffix = f" ({'; '.join(details)})" if details else ""
+        problems.append(f"output_completeness.complete=false{suffix}")
+
     if not isinstance(failures, list):
         problems.append("failures.json must be a list")
     elif len(failures) != failed:

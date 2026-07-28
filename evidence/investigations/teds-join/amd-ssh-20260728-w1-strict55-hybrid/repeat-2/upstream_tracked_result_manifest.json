@@ -1,0 +1,82 @@
+{
+  "archive": "upstream_tracked_result",
+  "archived": true,
+  "directory_count": 0,
+  "entries": [
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_display_formula_formula.json",
+      "sha256": "b421e2c9b2af238a0ea9291701bc9f01ba01700dc646e2961e98a764d9111e1f",
+      "size": 24839,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_display_formula_per_page_edit.json",
+      "sha256": "d559e91e203fb8a2430e8ca424ca6825084189aaee8beebcd205399df3337c5c",
+      "size": 210,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_display_formula_result.json",
+      "sha256": "fb11d5eab80c96eb84bd198ab384dbc79da2b4527b097236636ddc097216a42e",
+      "size": 24543,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_metric_result.json",
+      "sha256": "bb92a49ce352f77147fbeeafbe1bf8ab5512d3c5e804a3ad6bb195364a2432d7",
+      "size": 15761,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_reading_order_per_page_edit.json",
+      "sha256": "cda49f64e3ca3df61e2b2bb62dee5e02fb8fff990edee95d66cf6e960c5080d5",
+      "size": 1329,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_reading_order_result.json",
+      "sha256": "e3a72cd1f4811993e179ab10be1a40341b79072d898a07902ac1ba7086a3f8e8",
+      "size": 12935,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_table_per_page_edit.json",
+      "sha256": "aba78a3684badae20ea5d9a7502a7c0cab56a7bbc40d6bf766b5ab55e38026c8",
+      "size": 780,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_table_result.json",
+      "sha256": "eba92eb6233f9a45f6247d77f39fee28f1ca6b9d671e27cc13d707f700b7fa16",
+      "size": 49531,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_text_block_per_page_edit.json",
+      "sha256": "62f1c9f47476d77ecc74ceb187d9a26ec3399ae32fac0a00dd9caae6bf03ed86",
+      "size": 1502,
+      "type": "file"
+    },
+    {
+      "mode": "0o600",
+      "path": "end2end_quick_match_text_block_result.json",
+      "sha256": "92dcbe620e295df8118fa30c0cf88e83484fbbfdc0de1ab9ff6e86189cb8f14e",
+      "size": 381434,
+      "type": "file"
+    }
+  ],
+  "entry_count": 10,
+  "file_count": 10,
+  "schema_version": 1,
+  "source": "scorer/result",
+  "symlink_count": 0
+}

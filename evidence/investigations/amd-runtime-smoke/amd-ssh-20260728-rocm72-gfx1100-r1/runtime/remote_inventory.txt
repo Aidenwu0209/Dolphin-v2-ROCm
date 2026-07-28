@@ -1,0 +1,14 @@
+generated_at=2026-07-28T04:02:15Z
+dolphin_repo_commit=122162210307845c7bbb767ac54ca93d9a539c5e
+dolphin_repo_clean=true
+scorer_commit=2b161d010d2e3aff77a0edef359ea3a6411d23cd
+gt_sha256=a45cd84b04ad8b793e775089640e6b681209abea33ead54c1828ddca35fae496
+gt_records=1651
+selected_image_count=48
+smoke9_image_count=9
+teds_missing8_image_count=8
+model_top_level_file_count=14
+model_weight_file_count=2
+model_weight_bytes=7509337944
+Linux u-4695-e6d1476b 6.8.0-79-generic #79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"

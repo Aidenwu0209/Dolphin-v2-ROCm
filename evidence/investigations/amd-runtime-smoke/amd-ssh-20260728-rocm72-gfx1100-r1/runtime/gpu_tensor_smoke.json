@@ -1,0 +1,1 @@
+{"torch": "2.7.1+rocm7.2.0.git262e50d5", "hip": "7.2.26015-fc0010cf6a", "device": "AMD Radeon Graphics", "dtype": "bfloat16", "shape": [2048, 2048], "durations_seconds": [0.272600831463933, 0.00047073885798454285, 0.00032179243862628937], "finite": true}

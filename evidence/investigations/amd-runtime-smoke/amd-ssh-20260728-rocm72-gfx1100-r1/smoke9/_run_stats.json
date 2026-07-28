@@ -1,0 +1,18 @@
+{
+  "total": 9,
+  "succeeded": 9,
+  "failed": 0,
+  "skipped": 0,
+  "fallback": 0,
+  "started_at": "2026-07-28T02:37:00Z",
+  "finished_at": "2026-07-28T03:20:25Z",
+  "duration_seconds": 2605.0,
+  "backend": "transformers",
+  "platform": "linux-rocm",
+  "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "dataset_revision": null,
+  "output_dir": "/root/amd-evidence/inference/smoke9.63eStwwO",
+  "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+  "model_load_seconds": 26.35,
+  "pages_missing_records": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "dataset_name": "opendatalab/OmniDocBench",
+  "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+  "files": [
+    {
+      "name": "page-d0b2bb59-ce8e-4a1c-9ba1-a805606a477f.png",
+      "size_bytes": 915645,
+      "sha256": "9eb092c5f47397736fe2480449085aee039cddd252e26a25c3913abdf1e3ad88"
+    },
+    {
+      "name": "page-d29fe4d2-832a-4ad6-ac80-dc01cf8b0e16.png",
+      "size_bytes": 941509,
+      "sha256": "85dc881cc847b5f95255d816b606c9db4e308acc67c41057e0d3b97b4920aec8"
+    },
+    {
+      "name": "page-f9583127-1277-4424-be9d-35430e0aedd6.png",
+      "size_bytes": 655200,
+      "sha256": "ef878dbcbd458558b2cf322f4d4cab50fe1ad2ca7e8ab5996866ec2e5e12c605"
+    },
+    {
+      "name": "yanbaopptmerge_3f514841b9bba3e68710fde7af9562d36a424736a356ece18bb5eea86b43ada5.pdf_15.jpg",
+      "size_bytes": 429023,
+      "sha256": "eadba860f55264016dff75ee2bfb9985ebc4e5537e31a70bc81806e9712cf9c0"
+    },
+    {
+      "name": "yanbaor2_4f58b4bb233e5ccdf512d286d177cb94e6f6ae91d5b089ac841727067a20a510.pdf_3.jpg",
+      "size_bytes": 158609,
+      "sha256": "f1007ec2b390c83854348e5ce9f9c8e2abd34f590a8fdf9cd78249ee5fb9a67d"
+    },
+    {
+      "name": "yanbaor2_5e780ffd1efcf79950df199abb69a114dd782d5b549ecd025b640f29a4feabef.pdf_2.jpg",
+      "size_bytes": 329764,
+      "sha256": "6c2cf5465ec0dbc743e52eb45bfedfe7db69bc7b2a96ad9ea22c052c0728dcb2"
+    },
+    {
+      "name": "yanbaor2_ey-global-fintech-adoption-index.pdf_30.jpg",
+      "size_bytes": 158499,
+      "sha256": "9e5e1307e23035768da3c71c37d2f85ad4a08ccc892d0126b8b1795a9cf442e5"
+    },
+    {
+      "name": "yanbaor2_yanbaoPPT_2098.jpg",
+      "size_bytes": 187011,
+      "sha256": "e1a56dd78561c342b28962aed79fea3ebfb6c67d06f97c0246253595bbe27509"
+    }
+  ]
+}

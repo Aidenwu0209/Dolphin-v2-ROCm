@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "markdown": [
+    {
+      "name": "docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.md",
+      "size_bytes": 7278,
+      "sha256": "b93bb0212934b87cd84f138a7badff645abb2fd7b5caab36d44c1868c5d84254"
+    },
+    {
+      "name": "eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.md",
+      "size_bytes": 1135,
+      "sha256": "d9e0cd285338ad0afc5c0c4ba4d6b7b36cb39176aee4dfb17a7760fe6ba1f94a"
+    },
+    {
+      "name": "page-404e0471-bd71-426a-8e5a-81b8327f88e5.md",
+      "size_bytes": 15596,
+      "sha256": "c32ddcd7e2b70c5d536adb5665b09721e21e9efc364c188728e181e52c9cfead"
+    },
+    {
+      "name": "page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.md",
+      "size_bytes": 791,
+      "sha256": "120bffe114dacfe0e77678a24cc6d56ddf51c69f220b1d08140fab33adf38031"
+    },
+    {
+      "name": "page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.md",
+      "size_bytes": 6643,
+      "sha256": "85816efb7630c665f96899bada5448cbd1f9d4f4ba97a820bc79664c2cf661d1"
+    },
+    {
+      "name": "page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.md",
+      "size_bytes": 2092,
+      "sha256": "ee70b3e4b5bc8e8dd5673e2be56195384554ad93954b659c4bbe2608690ae859"
+    },
+    {
+      "name": "page-cd70bbf7-d3ee-4329-8e82-74144e709481.md",
+      "size_bytes": 816,
+      "sha256": "01b2f3be1001f3355a46e228dcc832374970c987952138270eaaaf5ccb7b2b41"
+    },
+    {
+      "name": "page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.md",
+      "size_bytes": 4556,
+      "sha256": "49040b5512ae3961f518f146534db21cadda68fa3f4e9ea74f79f1feda712f5d"
+    },
+    {
+      "name": "page-f108020f-edc5-4a27-85d9-d9d9c5d67309.md",
+      "size_bytes": 6893,
+      "sha256": "864ae759e35f79648ae1d16736331910727090ebe72b71df83c64bb3e3a51a38"
+    }
+  ],
+  "raw": [
+    {
+      "name": "docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.json",
+      "size_bytes": 13888,
+      "sha256": "3d300b7d1b92c1c29fea6b0d6aa931347c049eabdbd606290f71d3565f20f1de"
+    },
+    {
+      "name": "eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.json",
+      "size_bytes": 3540,
+      "sha256": "ac9b07c0d08e5e698b0dfc8df0a448f464422a5384a52e1eebadaf189cd48056"
+    },
+    {
+      "name": "page-404e0471-bd71-426a-8e5a-81b8327f88e5.json",
+      "size_bytes": 22948,
+      "sha256": "e50608e39fcadd0e93a21da71f648a84b7587dc2038c53faca8d1fe4848b8374"
+    },
+    {
+      "name": "page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.json",
+      "size_bytes": 3337,
+      "sha256": "85e4a289a3c216dcbeb79cd1a6b5480c9091e854ed85a90a452a94f285c53bfb"
+    },
+    {
+      "name": "page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.json",
+      "size_bytes": 9079,
+      "sha256": "cb348d461dcd9396b54ec11a0660d1721c37130fc3124a63e9293a2a9b928b2f"
+    },
+    {
+      "name": "page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.json",
+      "size_bytes": 5778,
+      "sha256": "01ee6c461cd11b7642ba9c86bcb55534fbbee99585f0fc8227481fc9bfe66469"
+    },
+    {
+      "name": "page-cd70bbf7-d3ee-4329-8e82-74144e709481.json",
+      "size_bytes": 1961,
+      "sha256": "f36ac5375731601fcfd60cc81c6f0c238928bb1ae448ec2179db33814826e52b"
+    },
+    {
+      "name": "page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.json",
+      "size_bytes": 8768,
+      "sha256": "9a52e0063ba2a6727f09410a8afc3ac8468b10609b243339846bb8c8364a607f"
+    },
+    {
+      "name": "page-f108020f-edc5-4a27-85d9-d9d9c5d67309.json",
+      "size_bytes": 14385,
+      "sha256": "668265586e2d8d9d38855841575b57e5d137473d3ef269d4943be523c3775d73"
+    }
+  ]
+}

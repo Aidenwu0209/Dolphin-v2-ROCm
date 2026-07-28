@@ -1,0 +1,27 @@
+{
+  "end2end_eval": {
+    "metrics": {
+      "table": {
+        "metric": [
+          "TEDS"
+        ],
+        "teds_workers": 1
+      }
+    },
+    "dataset": {
+      "dataset_name": "end2end_dataset",
+      "ground_truth": {
+        "data_path": "/root/amd-evidence/teds-join/strict55-runs.SL76hkE6/teds-join-w1.S8YXmHqv/input/OmniDocBench-teds-subset.json"
+      },
+      "prediction": {
+        "data_path": "/root/amd-evidence/teds-join/strict55-runs.SL76hkE6/teds-join-w1.S8YXmHqv/input/markdown"
+      },
+      "match_method": "quick_match",
+      "match_workers": 4,
+      "quick_match_truncate_timeout_sec": 300,
+      "match_timeout_sec": 420,
+      "timeout_fallback_max_chunk_span": 10,
+      "timeout_fallback_order_penalty": 0.1
+    }
+  }
+}

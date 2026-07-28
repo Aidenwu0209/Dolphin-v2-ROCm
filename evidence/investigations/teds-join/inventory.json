@@ -1,0 +1,992 @@
+{
+  "source": "evidence/accuracy/full-eval/metric_result.json",
+  "metric": "table.TEDS",
+  "sample_count": 665,
+  "error_case_count": 60,
+  "timeout_case_count": 0,
+  "unique_images": 55,
+  "unique_reason": "AssertionError: can only join a started process",
+  "note": "Offline inventory from archived full-eval metrics. Isolation experiments (n_jobs matrix, CUDA scorer-only) still pending when AMD/CUDA hosts are available.",
+  "images": [
+    {
+      "img_id": "book_en_国外数学教材-数论-Melvyn B. Nathanson—Elementary Methods in Number Theory_0100.png",
+      "page_id_guess": "book_en_国外数学教材-数论-Melvyn B. Nathanson—Elementary Methods in Number Theory_0100",
+      "n_error_cases": 2,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        },
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "book_zh_GB115041989_extracted_page_9.png",
+      "page_id_guess": "book_zh_GB115041989_extracted_page_9",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "book_zh_HGT51022016_extracted_page_12.png",
+      "page_id_guess": "book_zh_HGT51022016_extracted_page_12",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "color_textbook_zhonggaokao_小学_13.人教新起点英语（4-5年级）_人教新起点五年级英语下册_课本_人教新起点英语5B电子课本_page_011.png",
+      "page_id_guess": "color_textbook_zhonggaokao_小学_13.人教新起点英语（4-5年级）_人教新起点五年级英语下册_课本_人教新起点英语5B电子课本_page_011",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "docstructbench_dianzishu_zhongwenzaixian-o.O-63677793.pdf_332.jpg",
+      "page_id_guess": "docstructbench_dianzishu_zhongwenzaixian-o.O-63677793.pdf_332",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "docstructbench_dianzishu_zhongwenzaixian-o.O-63711094.pdf_34.jpg",
+      "page_id_guess": "docstructbench_dianzishu_zhongwenzaixian-o.O-63711094.pdf_34",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_66eea274d39b939da0f10253d279e119d87646f10fd21b3942eaf6c5d93b8134.pdf_0.jpg",
+      "page_id_guess": "eastmoney_66eea274d39b939da0f10253d279e119d87646f10fd21b3942eaf6c5d93b8134.pdf_0",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+      "page_id_guess": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            ""
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_7c25f92e2ab21d83e1eada0e40a68e3151e7c1c2d673ddb12b0242fa3ab931ab.pdf_13.jpg",
+      "page_id_guess": "eastmoney_7c25f92e2ab21d83e1eada0e40a68e3151e7c1c2d673ddb12b0242fa3ab931ab.pdf_13",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_7f55aa1223310144165074707803522240cf20120b15f5d78fdf61eb4dcefba3.pdf_2.jpg",
+      "page_id_guess": "eastmoney_7f55aa1223310144165074707803522240cf20120b15f5d78fdf61eb4dcefba3.pdf_2",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            2
+          ],
+          "pred_idx": [
+            ""
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_c1c12db90c6ecfae16a8eafa49caecfbc0e5f5654140320fe127f7c09bde96c9.pdf_1.jpg",
+      "page_id_guess": "eastmoney_c1c12db90c6ecfae16a8eafa49caecfbc0e5f5654140320fe127f7c09bde96c9.pdf_1",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            ""
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "eastmoney_db7967d371df6e4fb5850f3583fcf255c2ed8ef153e11aa38e0bd020b65f13ac.pdf_1.jpg",
+      "page_id_guess": "eastmoney_db7967d371df6e4fb5850f3583fcf255c2ed8ef153e11aa38e0bd020b65f13ac.pdf_1",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_1349.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_1349",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_1426.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_1426",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_1473.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_1473",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_1920.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_1920",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_194.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_194",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2124.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2124",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2183.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2183",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2360",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            2
+          ],
+          "pred_idx": [
+            2
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2554.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2554",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2755.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2755",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2839.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2839",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_2884.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_2884",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_3114.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_3114",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_397.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_397",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_574.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_574",
+      "n_error_cases": 2,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        },
+        {
+          "gt_idx": [
+            2
+          ],
+          "pred_idx": [
+            2
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_673.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_673",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_jiaocai_needrop_en_854.jpg",
+      "page_id_guess": "jiaocaineedrop_jiaocai_needrop_en_854",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "jiaocaineedrop_socialsci-74973.pdf_31.jpg",
+      "page_id_guess": "jiaocaineedrop_socialsci-74973.pdf_31",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            2
+          ],
+          "pred_idx": [
+            2
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "magazine_TheEconomist.2024.02.24_page_076.png",
+      "page_id_guess": "magazine_TheEconomist.2024.02.24_page_076",
+      "n_error_cases": 2,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            2
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        },
+        {
+          "gt_idx": [
+            3
+          ],
+          "pred_idx": [
+            2
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "newspaper_01f020903d7bc4b3fc69f500f41eb77e_1.jpg",
+      "page_id_guess": "newspaper_01f020903d7bc4b3fc69f500f41eb77e_1",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "newspaper_2a6b4fa088699701a6fa9ccecfb5c25d_1.jpg",
+      "page_id_guess": "newspaper_2a6b4fa088699701a6fa9ccecfb5c25d_1",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "newspaper_2a6b4fa088699701a6fa9ccecfb5c25d_2.jpg",
+      "page_id_guess": "newspaper_2a6b4fa088699701a6fa9ccecfb5c25d_2",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "newspaper_The Wall Street Journal - 2025-01-08@magazinesclubnew_page_018.png",
+      "page_id_guess": "newspaper_The Wall Street Journal - 2025-01-08@magazinesclubnew_page_018",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            3
+          ],
+          "pred_idx": [
+            ""
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "newspaper_fe5ed29024932fad071afc53807b16ba_2.jpg",
+      "page_id_guess": "newspaper_fe5ed29024932fad071afc53807b16ba_2",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_12.jpg",
+      "page_id_guess": "notes_1ba14cb325bc448f7201b20502ecf2b5_12",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_33.jpg",
+      "page_id_guess": "notes_1ba14cb325bc448f7201b20502ecf2b5_33",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_35.jpg",
+      "page_id_guess": "notes_1ba14cb325bc448f7201b20502ecf2b5_35",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_53.jpg",
+      "page_id_guess": "notes_1ba14cb325bc448f7201b20502ecf2b5_53",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_96.jpg",
+      "page_id_guess": "notes_1ba14cb325bc448f7201b20502ecf2b5_96",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png",
+      "page_id_guess": "page-0b20ed47-7c6c-4578-bbdf-057a89a083ec",
+      "n_error_cases": 2,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        },
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-4319d401-c9e8-4326-9869-7572cf2e0e96.png",
+      "page_id_guess": "page-4319d401-c9e8-4326-9869-7572cf2e0e96",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-52e82aa9-7bd7-4683-8adc-520cae0291e0.png",
+      "page_id_guess": "page-52e82aa9-7bd7-4683-8adc-520cae0291e0",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-7a8cfa1e-c76b-4449-a38f-497648074cd1.png",
+      "page_id_guess": "page-7a8cfa1e-c76b-4449-a38f-497648074cd1",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-a8d87718-ab19-4fc0-9ef5-3611ad10f88e.png",
+      "page_id_guess": "page-a8d87718-ab19-4fc0-9ef5-3611ad10f88e",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-ab441454-71f1-4900-87c1-d71d5602261e.png",
+      "page_id_guess": "page-ab441454-71f1-4900-87c1-d71d5602261e",
+      "n_error_cases": 2,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        },
+        {
+          "gt_idx": [
+            1
+          ],
+          "pred_idx": [
+            1
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-d0b2bb59-ce8e-4a1c-9ba1-a805606a477f.png",
+      "page_id_guess": "page-d0b2bb59-ce8e-4a1c-9ba1-a805606a477f",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-d29fe4d2-832a-4ad6-ac80-dc01cf8b0e16.png",
+      "page_id_guess": "page-d29fe4d2-832a-4ad6-ac80-dc01cf8b0e16",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "page-f9583127-1277-4424-be9d-35430e0aedd6.png",
+      "page_id_guess": "page-f9583127-1277-4424-be9d-35430e0aedd6",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "yanbaopptmerge_3f514841b9bba3e68710fde7af9562d36a424736a356ece18bb5eea86b43ada5.pdf_15.jpg",
+      "page_id_guess": "yanbaopptmerge_3f514841b9bba3e68710fde7af9562d36a424736a356ece18bb5eea86b43ada5.pdf_15",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "yanbaor2_4f58b4bb233e5ccdf512d286d177cb94e6f6ae91d5b089ac841727067a20a510.pdf_3.jpg",
+      "page_id_guess": "yanbaor2_4f58b4bb233e5ccdf512d286d177cb94e6f6ae91d5b089ac841727067a20a510.pdf_3",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "yanbaor2_5e780ffd1efcf79950df199abb69a114dd782d5b549ecd025b640f29a4feabef.pdf_2.jpg",
+      "page_id_guess": "yanbaor2_5e780ffd1efcf79950df199abb69a114dd782d5b549ecd025b640f29a4feabef.pdf_2",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "yanbaor2_ey-global-fintech-adoption-index.pdf_30.jpg",
+      "page_id_guess": "yanbaor2_ey-global-fintech-adoption-index.pdf_30",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    },
+    {
+      "img_id": "yanbaor2_yanbaoPPT_2098.jpg",
+      "page_id_guess": "yanbaor2_yanbaoPPT_2098",
+      "n_error_cases": 1,
+      "reason": "AssertionError: can only join a started process",
+      "cases": [
+        {
+          "gt_idx": [
+            0
+          ],
+          "pred_idx": [
+            0
+          ],
+          "reason": "AssertionError: can only join a started process"
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ reproducible OmniDocBench v1.6 evaluation and performance evidence.
 | OmniDocBench v1.6 canary (20 pages) | **Verified** (19/20 success, 1 soft-timeout, fallback=0) — [evidence/accuracy/canary/](evidence/accuracy/canary/) |
 | OmniDocBench v1.6 full eval (1651 pages) | **Verified** (1649/1651 success, 2 soft-timeouts, fallback=0; official scorer `page_count=1651`) — [evidence/accuracy/full-eval/](evidence/accuracy/full-eval/) |
 | Performance baseline vs optimized (3-repeat) | **Verified** — batch=8 gives +12% pages/s; [evidence/performance/comparison.md](evidence/performance/comparison.md) |
-| vLLM ROCm backend | **Known-incompatible via prebuilt wheels** on this stack (PyPI ships CUDA-only; AMD ROCm 7.2 wheel index has no vLLM) — [evidence/compatibility/vllm-rocm72-gfx1100.md](evidence/compatibility/vllm-rocm72-gfx1100.md) |
+| vLLM ROCm backend | **Experimental** — host `pip`/ROCm 7.2 wheels **known-incompatible** (verified); AMD `rocm/vllm` **gfx110X container / source build still open** (not yet probed for Dolphin) — [evidence/compatibility/vllm-rocm72-gfx1100.md](evidence/compatibility/vllm-rocm72-gfx1100.md) |
 
 Do not treat planned items as completed. Every public metric must link to JSON
 under `results/` or `evidence/`.
@@ -103,7 +103,7 @@ Artifacts: `evidence/performance/`.
 | Transformers + ROCm PyTorch 2.7.1 on gfx1100 | Verified |
 | BF16 GPU matmul | Verified |
 | Dolphin-v2 two-stage page parse | Verified (host smoke) |
-| vLLM ROCm | Known-incompatible via prebuilt wheels |
+| vLLM ROCm | Experimental — pip wheels ruled out; container/source open |
 | Other AMD arches | Unverified |
 | NVIDIA CUDA | Out of scope |
 

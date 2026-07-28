@@ -1,0 +1,24 @@
+{
+  "repeat_count": 3,
+  "required_repeat_count": 3,
+  "minimum_confirmation_repeats": 3,
+  "expected_page_count": 47,
+  "expected_teds_sample_count": 86,
+  "expected_match_workers": 4,
+  "expected_teds_workers": 1,
+  "all_structurally_valid": true,
+  "all_layer_a_vanished": true,
+  "sample_scores": [
+    0.7001473590085873,
+    0.7001473590085873,
+    0.7001473590085873
+  ],
+  "page_scores": [
+    0.8230421461534239,
+    0.8230421461534239,
+    0.8230421461534239
+  ],
+  "sample_score_exactly_stable": true,
+  "page_score_exactly_stable": true,
+  "confirmed": true
+}

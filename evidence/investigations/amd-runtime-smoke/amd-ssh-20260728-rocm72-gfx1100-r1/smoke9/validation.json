@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "errors": [],
+  "checked_at": "2026-07-28T03:23:15.056291Z",
+  "expected_pages": 9,
+  "checkpoint_pages": 9,
+  "nonempty_markdown": 9,
+  "raw_json": 9,
+  "checkpoint_fallback_count": 0,
+  "distorted_page_mode_count": 0,
+  "raw_distorted_count": 0,
+  "repo_head": "122162210307845c7bbb767ac54ca93d9a539c5e",
+  "repo_clean": true,
+  "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+  "run_stats_dataset_revision": null,
+  "input_manifest_dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec"
+}

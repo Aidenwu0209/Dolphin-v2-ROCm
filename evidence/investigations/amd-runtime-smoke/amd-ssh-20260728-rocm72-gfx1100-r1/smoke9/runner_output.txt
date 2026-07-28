@@ -1,0 +1,30 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.07it/s]
+2026-07-28 02:37:32,160 INFO dolphin_v2_rocm.backends.transformers_rocm: Model loaded from /root/models/Dolphin-v2 in 26.4s on cuda
+2026-07-28 02:44:58,852 INFO dolphin_v2_rocm.pipeline: [1/9] docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1 status=success latency=446689.0ms
+2026-07-28 02:47:42,682 INFO dolphin_v2_rocm.pipeline: [2/9] eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11 status=success latency=163822.4ms
+2026-07-28 02:55:42,350 INFO dolphin_v2_rocm.pipeline: [3/9] page-404e0471-bd71-426a-8e5a-81b8327f88e5 status=success latency=479664.6ms
+2026-07-28 03:00:02,722 INFO dolphin_v2_rocm.pipeline: [4/9] page-961a543b-d09d-4fd8-944a-1a38d67bb3bc status=success latency=260369.8ms
+2026-07-28 03:06:12,717 INFO dolphin_v2_rocm.pipeline: [5/9] page-ba4443e6-f432-435f-89e7-ddf0a571d2cd status=success latency=369992.1ms
+2026-07-28 03:10:31,494 INFO dolphin_v2_rocm.pipeline: [6/9] page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b status=success latency=258774.2ms
+2026-07-28 03:12:58,018 INFO dolphin_v2_rocm.pipeline: [7/9] page-cd70bbf7-d3ee-4329-8e82-74144e709481 status=success latency=146522.2ms
+2026-07-28 03:17:14,699 INFO dolphin_v2_rocm.pipeline: [8/9] page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1 status=success latency=256673.2ms
+2026-07-28 03:20:25,062 INFO dolphin_v2_rocm.pipeline: [9/9] page-f108020f-edc5-4a27-85d9-d9d9c5d67309 status=success latency=190360.7ms
+{
+  "total": 9,
+  "succeeded": 9,
+  "failed": 0,
+  "skipped": 0,
+  "fallback": 0,
+  "started_at": "2026-07-28T02:37:00Z",
+  "finished_at": "2026-07-28T03:20:25Z",
+  "duration_seconds": 2605.0,
+  "backend": "transformers",
+  "platform": "linux-rocm",
+  "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "dataset_revision": null,
+  "output_dir": "/root/amd-evidence/inference/smoke9.63eStwwO",
+  "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+  "model_load_seconds": 26.35,
+  "pages_missing_records": []
+}

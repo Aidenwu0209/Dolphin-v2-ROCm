@@ -59,8 +59,26 @@ falls back to raw LaTeX after a 30 s timeout. Scoring completes and Edit_dist
 remains valid, but expect warnings and slower text preprocessing. Timeout
 inputs are logged under `OmniDocBench/logs/timeout_inputs/`.
 
+## Soft-timeout pages on full-eval (2 / 1651)
+
+Full infer completed with two soft-timeouts (no fallback success):
+
+- `jiaocaineedrop_jiaocai_needrop_en_3063.jpg`
+- `newspaper_b615618f3cdb0f2c13ffb5865dea799c_1.jpg`
+
+These are **not** yet classified as AMD-specific. Prefer a CUDA 5070 Ti
+parity run on `eval/configs/cuda5070ti_timeout_pages.txt` before upstream or
+driver conclusions. Notes: `evidence/investigations/soft-timeout/NOTES.md`.
+
+## TEDS `AssertionError: can only join a started process`
+
+Full-eval table TEDS reported 60 error cases (55 unique images), all with this
+reason. Inventory: `evidence/investigations/teds-join/`. Prefer scorer-only
+isolation (`n_jobs` matrix / CUDA host) before filing OmniDocBench.
+
 ## Do not
 
 - Override GFX version globally to “make it work”
 - Delete unknown directories under `/root` to free space without approval
 - Upgrade system ROCm/drivers mid-run without approval
+- Publish upstream Issues/PRs without explicit approval (`docs/upstream-contributions.md`)
