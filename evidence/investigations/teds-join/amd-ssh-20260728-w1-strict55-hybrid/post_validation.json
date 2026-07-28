@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "errors": [],
+  "checked_at": "2026-07-28T04:00:17.161475Z",
+  "label": "hybrid_recovered_strict55",
+  "interpretation_scope": "TEDS workers=1 process-lifecycle isolation on 47 historical + 8 freshly recovered predictions",
+  "page_count": 55,
+  "gt_table_count": 94,
+  "historical_join_case_count": 60,
+  "historical_retained_predictions": 47,
+  "fresh_recovered_predictions": 8,
+  "sample_score": 0.7205098758044178,
+  "page_score": 0.8399679330925036,
+  "sample_score_exactly_stable": true,
+  "page_score_exactly_stable": true,
+  "repeats": [
+    {
+      "repeat": 1,
+      "duration_seconds": 25,
+      "latex_to_text_os_fork_warning_occurrences": 47,
+      "table_teds_sample_all": 0.7205098758044178,
+      "table_teds_page_all": 0.8399679330925036,
+      "sha256sums_valid": true,
+      "upstream_manifest_hash_valid": true
+    },
+    {
+      "repeat": 2,
+      "duration_seconds": 25,
+      "latex_to_text_os_fork_warning_occurrences": 33,
+      "table_teds_sample_all": 0.7205098758044178,
+      "table_teds_page_all": 0.8399679330925036,
+      "sha256sums_valid": true,
+      "upstream_manifest_hash_valid": true
+    },
+    {
+      "repeat": 3,
+      "duration_seconds": 25,
+      "latex_to_text_os_fork_warning_occurrences": 51,
+      "table_teds_sample_all": 0.7205098758044178,
+      "table_teds_page_all": 0.8399679330925036,
+      "sha256sums_valid": true,
+      "upstream_manifest_hash_valid": true
+    }
+  ],
+  "latex_to_text_warning_note": "Independent page-matching concurrency warning; does not invalidate the zero TEDS error counts, but prevents claiming the whole scorer is concurrency-clean.",
+  "driver_script_sha256": "675bae309c31dc65e5490f75fa0aec6ea7d11aaa95854887b147c1425ba62df5"
+}

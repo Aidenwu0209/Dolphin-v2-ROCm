@@ -11,31 +11,33 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from eval.release_contract import validate_release_dir  # noqa: E402
 
+_NOT_PROVIDED = object()
+
 
 def _write(path: Path, payload) -> None:
     path.write_text(json.dumps(payload), encoding="utf-8")
 
 
-def test_release_contract_passes_minimal(tmp_path: Path):
-    _write(
-        tmp_path / "run_summary.json",
-        {
-            "total": 2,
-            "succeeded": 2,
-            "failed": 0,
-            "skipped": 0,
-            "fallback": 0,
-            "started_at": "2026-07-20T00:00:00Z",
-            "finished_at": "2026-07-20T00:01:00Z",
-            "duration_seconds": 60,
-            "backend": "transformers",
-            "platform": "linux-rocm",
-            "model_revision": "abc",
-            "dataset_revision": "def",
-            "output_dir": str(tmp_path),
-            "config_digest": "sha256:" + ("a" * 64),
-        },
-    )
+def _write_minimal_release(tmp_path: Path, *, output_completeness=_NOT_PROVIDED) -> None:
+    summary = {
+        "total": 2,
+        "succeeded": 2,
+        "failed": 0,
+        "skipped": 0,
+        "fallback": 0,
+        "started_at": "2026-07-20T00:00:00Z",
+        "finished_at": "2026-07-20T00:01:00Z",
+        "duration_seconds": 60,
+        "backend": "transformers",
+        "platform": "linux-rocm",
+        "model_revision": "abc",
+        "dataset_revision": "def",
+        "output_dir": str(tmp_path),
+        "config_digest": "sha256:" + ("a" * 64),
+    }
+    if output_completeness is not _NOT_PROVIDED:
+        summary["output_completeness"] = output_completeness
+    _write(tmp_path / "run_summary.json", summary)
     _write(
         tmp_path / "_run_stats.json",
         {"pages_missing_records": [], "total": 2, "succeeded": 2, "failed": 0},
@@ -84,7 +86,31 @@ def test_release_contract_passes_minimal(tmp_path: Path):
     )
     _write(tmp_path / "metric_result.json", {"text_edit": 0.9})
 
+
+def test_release_contract_passes_legacy_summary_without_completeness(tmp_path: Path):
+    _write_minimal_release(tmp_path)
+
     assert validate_release_dir(tmp_path) == []
+
+
+def test_release_contract_passes_complete_markdown(tmp_path: Path):
+    _write_minimal_release(
+        tmp_path,
+        output_completeness={"complete": True, "missing": [], "empty": []},
+    )
+
+    assert validate_release_dir(tmp_path) == []
+
+
+def test_release_contract_rejects_missing_markdown(tmp_path: Path):
+    _write_minimal_release(
+        tmp_path,
+        output_completeness={"complete": False, "missing": ["doc_b"], "empty": []},
+    )
+
+    problems = validate_release_dir(tmp_path)
+
+    assert "output_completeness.complete=false (missing markdown: doc_b)" in problems
 
 
 def test_release_contract_catches_fallback(tmp_path: Path):

@@ -1,0 +1,173 @@
+[
+  {
+    "page_id": "docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1",
+    "source_path": "/root/data/suites/smoke9/docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.jpg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.json",
+    "error": null,
+    "latency_ms": 446689.0,
+    "peak_vram_mb": 8236.4,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 29,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11",
+    "source_path": "/root/data/suites/smoke9/eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.jpg",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.json",
+    "error": null,
+    "latency_ms": 163822.4,
+    "peak_vram_mb": 7980.3,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 9,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-404e0471-bd71-426a-8e5a-81b8327f88e5",
+    "source_path": "/root/data/suites/smoke9/page-404e0471-bd71-426a-8e5a-81b8327f88e5.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-404e0471-bd71-426a-8e5a-81b8327f88e5.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-404e0471-bd71-426a-8e5a-81b8327f88e5.json",
+    "error": null,
+    "latency_ms": 479664.6,
+    "peak_vram_mb": 8235.2,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 32,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-961a543b-d09d-4fd8-944a-1a38d67bb3bc",
+    "source_path": "/root/data/suites/smoke9/page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.json",
+    "error": null,
+    "latency_ms": 260369.8,
+    "peak_vram_mb": 8214.0,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 11,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-ba4443e6-f432-435f-89e7-ddf0a571d2cd",
+    "source_path": "/root/data/suites/smoke9/page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.json",
+    "error": null,
+    "latency_ms": 369992.1,
+    "peak_vram_mb": 8214.0,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 10,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b",
+    "source_path": "/root/data/suites/smoke9/page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.json",
+    "error": null,
+    "latency_ms": 258774.2,
+    "peak_vram_mb": 8150.6,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 16,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-cd70bbf7-d3ee-4329-8e82-74144e709481",
+    "source_path": "/root/data/suites/smoke9/page-cd70bbf7-d3ee-4329-8e82-74144e709481.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-cd70bbf7-d3ee-4329-8e82-74144e709481.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-cd70bbf7-d3ee-4329-8e82-74144e709481.json",
+    "error": null,
+    "latency_ms": 146522.2,
+    "peak_vram_mb": 8521.2,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 4,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1",
+    "source_path": "/root/data/suites/smoke9/page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.json",
+    "error": null,
+    "latency_ms": 256673.2,
+    "peak_vram_mb": 8150.3,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 18,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  },
+  {
+    "page_id": "page-f108020f-edc5-4a27-85d9-d9d9c5d67309",
+    "source_path": "/root/data/suites/smoke9/page-f108020f-edc5-4a27-85d9-d9d9c5d67309.png",
+    "status": "success",
+    "backend": "transformers",
+    "markdown_path": "/root/amd-evidence/inference/smoke9.63eStwwO/markdown/page-f108020f-edc5-4a27-85d9-d9d9c5d67309.md",
+    "raw_output_path": "/root/amd-evidence/inference/smoke9.63eStwwO/raw/page-f108020f-edc5-4a27-85d9-d9d9c5d67309.json",
+    "error": null,
+    "latency_ms": 190360.7,
+    "peak_vram_mb": 8236.2,
+    "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "fallback": false,
+    "attempts": 1,
+    "element_count": 33,
+    "extra": {
+      "distorted_page_mode": false
+    }
+  }
+]

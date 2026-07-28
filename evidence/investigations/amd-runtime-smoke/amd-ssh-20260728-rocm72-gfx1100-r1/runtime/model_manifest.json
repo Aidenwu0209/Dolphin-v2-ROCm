@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-28T04:02:48.653530Z",
+  "model": "ByteDance/Dolphin-v2",
+  "revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "top_level_file_count": 14,
+  "top_level_total_bytes": 7520906987,
+  "weight_file_count": 2,
+  "weight_total_bytes": 7509337944,
+  "index_weight_entry_count": 824,
+  "index_referenced_shards": [
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors"
+  ],
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size_bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "name": "LICENSE",
+      "size_bytes": 7387,
+      "sha256": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 4157,
+      "sha256": "8db97b0a970f1ee127d8cbf58544f1d1f0883fe8d4c5b142ce1467b7177b2add"
+    },
+    {
+      "name": "chat_template.json",
+      "size_bytes": 1050,
+      "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96"
+    },
+    {
+      "name": "config.json",
+      "size_bytes": 1373,
+      "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5"
+    },
+    {
+      "name": "generation_config.json",
+      "size_bytes": 216,
+      "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9"
+    },
+    {
+      "name": "merges.txt",
+      "size_bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "name": "model-00001-of-00002.safetensors",
+      "size_bytes": 4997750760,
+      "sha256": "316107cf7d7d886567751c135c229b5485299185cba846fa17f0c51918d1b519"
+    },
+    {
+      "name": "model-00002-of-00002.safetensors",
+      "size_bytes": 2511587184,
+      "sha256": "5e4426531976cfe1c81f83b9e1dd8895372acf0ee6ba7b695e4efff8bcf5b8e3"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size_bytes": 65448,
+      "sha256": "eafcf7eb80f0e63f73ef902b792726372d9a5ac90f7c724898006882705360da"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size_bytes": 350,
+      "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+    },
+    {
+      "name": "tokenizer.json",
+      "size_bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size_bytes": 7226,
+      "sha256": "7d0fc4691628c9f6b0c77f8138a80517896a307e074dd5ac87e279ea85515774"
+    },
+    {
+      "name": "vocab.json",
+      "size_bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ]
+}

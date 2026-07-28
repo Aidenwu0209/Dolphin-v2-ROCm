@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "dataset_name": "opendatalab/OmniDocBench",
+  "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+  "files": [
+    {
+      "name": "docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1.jpg",
+      "size_bytes": 1244125,
+      "sha256": "2e55d95a912e722deec07720955000a860e99d1fdaa6e2138c7e290066391635"
+    },
+    {
+      "name": "eastmoney_59cde7e939acc3124df9d3f2c85b5a0ec41b9da1157d5be38e098672022b47cb.pdf_11.jpg",
+      "size_bytes": 329887,
+      "sha256": "d6fd2c14e36d6d190d5c0a8dd93ca2e5bd8ef422a5bc09ecb58a5c69b4daed3c"
+    },
+    {
+      "name": "page-404e0471-bd71-426a-8e5a-81b8327f88e5.png",
+      "size_bytes": 306020,
+      "sha256": "b37ac7d281d46e47083add71c44d5351e02730c559b8738e4c17089b4f9dd4d1"
+    },
+    {
+      "name": "page-961a543b-d09d-4fd8-944a-1a38d67bb3bc.png",
+      "size_bytes": 570659,
+      "sha256": "0f69ab49777fbbdc2ab529a0118f60f5c8c2251a6e045ba60a5e3c7083632374"
+    },
+    {
+      "name": "page-ba4443e6-f432-435f-89e7-ddf0a571d2cd.png",
+      "size_bytes": 340914,
+      "sha256": "c5e95fe0daf23e30c2f34660e78871bddcac1535982341b92c6eda47e3c00de0"
+    },
+    {
+      "name": "page-bd6eb36e-0856-4d9d-b587-21b4a0209c8b.png",
+      "size_bytes": 300261,
+      "sha256": "525cdbe61c2fcc21d7eaebf6c67bafc0e5260381ce1dd0c92b1b338912a386f3"
+    },
+    {
+      "name": "page-cd70bbf7-d3ee-4329-8e82-74144e709481.png",
+      "size_bytes": 819470,
+      "sha256": "2604fd1f33125a31955e7145ccbc7e667f6e62951067af81dce4fd6f17cbf98f"
+    },
+    {
+      "name": "page-dd5b0a99-4cc6-4fa9-ab63-a277947735b1.png",
+      "size_bytes": 1780464,
+      "sha256": "972ab75a8b114570ccd3ed7209ed981eb8de70f6efc014a0ef5920effde42aca"
+    },
+    {
+      "name": "page-f108020f-edc5-4a27-85d9-d9d9c5d67309.png",
+      "size_bytes": 430860,
+      "sha256": "3dccd1fb3bb4378453fad59b6211400537d15fee881e732a94614bd7b00a6673"
+    }
+  ]
+}

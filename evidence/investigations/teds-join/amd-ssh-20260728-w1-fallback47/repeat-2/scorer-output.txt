@@ -1,0 +1,490 @@
+2026-07-28 02:19:15.345 | INFO     | src.dataset.end2end_dataset:_collect_page_matches:2054 - [quick-match] using page workers=4
+Matching pages:   0%|                                                                                                | 0/47 [00:00<?, ?it/s]Matching pages:   2%|#8                                                                                      | 1/47 [00:00<00:13,  3.29it/s]WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\[p_{sb1}\]...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_b29e58e3683b4822935f50e897545708.json input="\\[p_{sb1}\\]"
+Matching pages:  15%|#############1                                                                          | 7/47 [00:00<00:02, 19.33it/s]WARNING:root:ERROR: latex_to_text failed [img_name="jiaocaineedrop_jiaocai_needrop_en_1920.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1920.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\[NH_{4}Cl\]...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="jiaocaineedrop_jiaocai_needrop_en_1920.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1920.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_12cabfda4dd948b88bdace993fc101fc.json input="\\[NH_{4}Cl\\]"
+WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\[p_{sk1}\]...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_94781a2b56aa4cc48a45eeb6e4fc2829.json input="\\[p_{sk1}\\]"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{(\ )}{10}=\frac{(\ )}{25}=\frac{(\ )}{45}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_de3ab10dbd7144af8134ff6588ad6e92.json input="\\frac{(\\ )}{10}=\\frac{(\\ )}{25}=\\frac{(\\ )}{45}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\left(\frac{12}{13},-\frac{5}{13}\right)...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\mathbf{O}_{2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_7a101b95ef9e41e9b84b3589c4800d6a.json input="\\left(\\frac{12}{13},-\\frac{5}{13}\\right)"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_a22a93e2adbc44feb88ab3ea5bc384ad.json input="\\mathbf{O}_{2}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\angle AOC=\alpha...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_dc1096a08c474362903c82db339b4cfe.json input="\\angle AOC=\\alpha"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>4\sqrt{2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_55e14808aa644d16bc6c7ecf9bb8f4d3.json input="4\\sqrt{2}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>36\pi cm^2...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_ae3c62d0d95942189ca7f8ca4945fdea.json input="36\\pi cm^2"
+WARNING:root:ERROR: latex_to_text failed [img_name="jiaocaineedrop_jiaocai_needrop_en_1920.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1920.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>NH_{4}Cl...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="jiaocaineedrop_jiaocai_needrop_en_1920.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1920.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_8d7c6c3b97584cf5a919e657506e0237.json input="NH_{4}Cl"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{6}{9}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_e07cb220ac0e4202b0be65e19e1b259c.json input="\\frac{6}{9}"
+2026-07-28 02:19:16.620 | INFO     | src.dataset.end2end_dataset:_maybe_apply_local_text_span_fallback:639 - [text-fallback] jiaocaineedrop_jiaocai_needrop_en_1920.jpg: gt_idx=[9] edit=0.8175->0.3138 pred_idx=[9, 10, 11, 12, 13]
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>q_{ik}...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{7}{9}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_f10c17ef25784fb986fd212e7f5b7afe.json input="q_{ik}"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_2c8d6fa85eff4f6698536b14b0040104.json input="\\frac{7}{9}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>p_{s}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_fc626c962a804cc396e6a76c3aafb920.json input="p_{s}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>PA=AB=2\sqrt{2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_20692f640a834087a604543c4a4ab768.json input="PA=AB=2\\sqrt{2}"
+Matching pages:  21%|##################5                                                                    | 10/47 [00:01<00:06,  5.93it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>p _ { \mathrm { s b 2 } }...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_83969374a87c45d59e2e57bdad26bd74.json input="p _ { \\mathrm { s b 2 } }"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{15}{47}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_4456cc4996e742928aa83a96636cf677.json input="\\frac{15}{47}"
+Matching pages:  26%|######################2                                                                | 12/47 [00:01<00:06,  5.82it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{3}{5}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_e04eda6678bf42e894ef1b604b1d8e97.json input="\\frac{3}{5}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>9 \mathrm{~ c m}^{2}=( \qquad\mathrm{~} ) \mathrm{d m}^{2}...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\pmb { q } _ { \mathrm { s } i \mathbf { k } }...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_76c55556120749059c4b1a65a322f4c3.json input="9 \\mathrm{~ c m}^{2}=( \\qquad\\mathrm{~} ) \\mathrm{d m}^{2}"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_e06d8655dd594268aa26539569c979d9.json input="\\pmb { q } _ { \\mathrm { s } i \\mathbf { k } }"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\pmb { \varphi _ { s } }...<<<
+Matching pages:  30%|#########################9                                                             | 14/47 [00:02<00:05,  6.36it/s][latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_e9a216623cec4a82b551880cf18e3730.json input="\\pmb { \\varphi _ { s } }"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{3}{4}\bigcirc \frac{3}{5}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_618380252c994762a73c8e2d1f698831.json input="\\frac{3}{4}\\bigcirc \\frac{3}{5}"
+2026-07-28 02:19:17.632 | INFO     | src.dataset.end2end_dataset:_maybe_apply_local_text_span_fallback:639 - [text-fallback] jiaocaineedrop_jiaocai_needrop_en_2755.jpg: gt_idx=[11] edit=0.6304->0.2365 pred_idx=[7, 8]
+WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>p_{sb1}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_67a71f0078db4a8da189a748c11c2410.json input="p_{sb1}"
+Matching pages:  34%|#############################6                                                         | 16/47 [00:02<00:05,  5.93it/s]WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>p_{sk2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_e55e6ab20d9a431981b85a046b7928aa.json input="p_{sk2}"
+Matching pages:  40%|###################################1                                                   | 19/47 [00:02<00:03,  8.19it/s]WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\beta...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_bebce04cbb9f466790cd0cd9e1d95db0.json input="\\beta"
+WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>q_{ik}...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\left( \frac{1 2} {1 3},-\frac{5} {1 3} \right),...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_86815ae5bf56465698f2595cb9049a24.json input="q_{ik}"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_9cf9f42b261e434097179430b23b1e4d.json input="\\left( \\frac{1 2} {1 3},-\\frac{5} {1 3} \\right),"
+WARNING:root:ERROR: latex_to_text failed [img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>p_{s}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/page-0b20ed47-7c6c-4578-bbdf-057a89a083ec.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_3e5418bc3a544a80af24cb48c3e24802.json input="p_{s}"
+Matching pages:  45%|######################################8                                                | 21/47 [00:02<00:02,  9.06it/s]Matching pages:  51%|############################################4                                          | 24/47 [00:02<00:01, 12.03it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{1}{2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_ba72b359c9134e4fbc08a9fe7e055af5.json input="\\frac{1}{2}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{4}{8}...<<<
+Matching pages:  55%|################################################1                                      | 26/47 [00:02<00:01, 13.30it/s][latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_362ebeac1dab4c68893eaf1c741c8efe.json input="\\frac{4}{8}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{3}{7}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_d52781d153b342ee87cc286853fe3386.json input="\\frac{3}{7}"
+Matching pages:  62%|#####################################################6                                 | 29/47 [00:03<00:01, 14.82it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{13}{25}...<<<
+Matching pages:  66%|#########################################################3                             | 31/47 [00:03<00:01, 14.61it/s][latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_99cabcedcbe849f490e3074a94f0ccde.json input="\\frac{13}{25}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{CG}{PC}...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{A}{C}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_d0a3c50dca614d4b80a7cee978989f48.json input="\\frac{CG}{PC}"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_6b6f80282d2c454281a9029983d9679e.json input="\\frac{A}{C}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\S...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_2f053522a5f04540ad42a215c235ca05.json input="\\S"
+Matching pages:  70%|#############################################################                          | 33/47 [00:03<00:01, 13.56it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\text { § }...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_6733509ea3ba4702847b5c9bc90e8bb1.json input="\\text { § }"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{3}{5}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_70411886dd294ff096d9a56b5ea9757c.json input="\\frac{3}{5}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{48}{70}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_9b691426857b487ca7b5bb1c64ff8104.json input="\\frac{48}{70}"
+Matching pages:  74%|################################################################7                      | 35/47 [00:03<00:00, 12.49it/s]Matching pages:  79%|####################################################################4                  | 37/47 [00:03<00:00, 11.46it/s]Matching pages:  83%|########################################################################1              | 39/47 [00:04<00:00, 11.18it/s]WARNING:root:ERROR: latex_to_text failed [img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{11}{11}\bigcirc \frac{29}{29}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_fe06647b0e304d378952b4e62b258b40.json input="\\frac{11}{11}\\bigcirc \\frac{29}{29}"
+WARNING:root:ERROR: latex_to_text failed [img_name="book_zh_GB115041989_extracted_page_9.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_GB115041989_extracted_page_9.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\[\delta\]...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="book_zh_GB115041989_extracted_page_9.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_GB115041989_extracted_page_9.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_3adaef74e852437b87fc62d136e5e70f.json input="\\[\\delta\\]"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>( \mathrm{I} )...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_24579d9830d64a1584c5b08933a353bb.json input="( \\mathrm{I} )"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>( \mathrm{I I} )...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_f2ba90692cbc46b7a94f17c4b38ad38f.json input="( \\mathrm{I I} )"
+WARNING:root:ERROR: latex_to_text failed [img_name="book_zh_HGT51022016_extracted_page_12.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_HGT51022016_extracted_page_12.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\[M_{1}\]...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\mu...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="book_zh_HGT51022016_extracted_page_12.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_HGT51022016_extracted_page_12.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_232b3018fa114403b85758f25d59b561.json input="\\[M_{1}\\]"
+WARNING:root:ERROR: latex_to_text failed [img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{3}{7}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_f65d9451ffd344ab869a505b64e2507c.json input="\\mu"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_56d1f488f17d4b74bc9a4868a89eca7a.json input="\\frac{3}{7}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\angle F B A=\beta...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_8a16e647fa3c49ac8362af30903a6d32.json input="\\angle F B A=\\beta"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\alpha...<<<
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>60^{\circ}\mathrm{C} \pm 1^{\circ}\mathrm{C}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_c4002006484e456ea57bf0edbd444043.json input="\\alpha"
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_6b4df68890ad434d852db80f5506b88b.json input="60^{\\circ}\\mathrm{C} \\pm 1^{\\circ}\\mathrm{C}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\delta...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_3bd58f87c4ea4ebdb16108a89922008a.json input="\\delta"
+WARNING:root:ERROR: latex_to_text failed [img_name="book_zh_HGT51022016_extracted_page_12.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_HGT51022016_extracted_page_12.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>M_{2}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="book_zh_HGT51022016_extracted_page_12.png" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/book_zh_HGT51022016_extracted_page_12.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_f2bec8f657204229b0d8d5e7529c69cc.json input="M_{2}"
+2026-07-28 02:19:20.411 | INFO     | src.dataset.end2end_dataset:_match_display_formula_candidates:1568 - [formula-match-candidate] book_zh_HGT51022016_extracted_page_12.png: choose=quick_unsplit page_cost=3.2174
+Matching pages:  87%|###########################################################################8           | 41/47 [00:05<00:01,  4.78it/s]2026-07-28 02:19:20.726 | INFO     | src.dataset.end2end_dataset:_match_display_formula_candidates:1568 - [formula-match-candidate] book_zh_GB115041989_extracted_page_9.png: choose=hungarian_unsplit page_cost=6.9185
+Matching pages:  89%|#############################################################################7         | 42/47 [00:05<00:01,  4.37it/s]WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>|(\mathbf{Z}/p\mathbf{Z})^\times| =...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_aba3d43f94e6479581b2edd926707363.json input="|(\\mathbf{Z}/p\\mathbf{Z})^\\times| ="
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\square...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_11d04b0ee4e54fb294d2a6918bcbd6e8.json input="\\square"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>^{\star}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_0538b386504546b6a4162af8eba2c296.json input="^{\\star}"
+WARNING:root:ERROR: latex_to_text failed: os.fork is unsafe while filelock is changing descriptor ownership, >>>\left| x-\frac{1} {2} \right|+\left| x+\frac{1} {2} \right|...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_277123df22454ed499cd0287db4c8bb2.json input="\\left| x-\\frac{1} {2} \\right|+\\left| x+\\frac{1} {2} \\right|"
+Matching pages:  94%|#################################################################################4     | 44/47 [00:06<00:00,  3.71it/s]WARNING:root:ERROR: latex_to_text failed [img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md"]: os.fork is unsafe while filelock is changing descriptor ownership, >>>\frac{15}{47}...<<<
+[latex-to-text-timeout-input] reason=failed timeout=30.0 img_name="jiaocaineedrop_jiaocai_needrop_en_1349.jpg" pred_path="/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/input/markdown/jiaocaineedrop_jiaocai_needrop_en_1349.md" path=/root/amd-evidence/teds-join/teds-join-w1.Pk4U5zJd/repeat-2/scorer/logs/timeout_inputs/latex_to_text_ff55ed4aaec846fcb94a58af34852a3d.json input="\\frac{15}{47}"
+2026-07-28 02:19:21.961 | INFO     | src.dataset.end2end_dataset:_match_display_formula_candidates:1568 - [formula-match-candidate] jiaocaineedrop_jiaocai_needrop_en_1349.jpg: choose=quick_unsplit page_cost=33.2353
+Matching pages:  96%|###################################################################################2   | 45/47 [00:06<00:00,  3.15it/s]Matching pages:  98%|#####################################################################################1 | 46/47 [00:06<00:00,  3.44it/s]2026-07-28 02:19:23.004 | INFO     | src.dataset.end2end_dataset:_maybe_apply_local_text_span_fallback:639 - [text-fallback] jiaocaineedrop_jiaocai_needrop_en_1473.jpg: gt_idx=[16] edit=0.6719->0.3125 pred_idx=[27, 28, 29]
+2026-07-28 02:19:23.005 | INFO     | src.dataset.end2end_dataset:_maybe_apply_local_text_span_fallback:639 - [text-fallback] jiaocaineedrop_jiaocai_needrop_en_1473.jpg: gt_idx=[2] edit=0.5789->0.2519 pred_idx=[0, 1]
+Matching pages: 100%|#######################################################################################| 47/47 [00:07<00:00,  2.36it/s]Matching pages: 100%|#######################################################################################| 47/47 [00:07<00:00,  6.13it/s]
+###### Process:  markdown_quick_match
+TEDS:   0%|                                                                                                          | 0/86 [00:00<?, ?it/s]TEDS:   2%|##2                                                                                               | 2/86 [00:00<00:04, 18.34it/s]TEDS:   6%|#####6                                                                                            | 5/86 [00:00<00:05, 13.78it/s]TEDS:   9%|#########1                                                                                        | 8/86 [00:00<00:04, 15.74it/s]TEDS:  12%|###########2                                                                                     | 10/86 [00:00<00:04, 15.25it/s]TEDS:  14%|#############5                                                                                   | 12/86 [00:01<00:08,  8.25it/s]TEDS:  17%|################9                                                                                | 15/86 [00:01<00:06, 11.39it/s]TEDS:  21%|####################3                                                                            | 18/86 [00:01<00:04, 13.71it/s]TEDS:  24%|#######################6                                                                         | 21/86 [00:01<00:03, 16.48it/s]TEDS:  28%|###########################                                                                      | 24/86 [00:01<00:03, 18.04it/s]TEDS:  31%|##############################4                                                                  | 27/86 [00:01<00:03, 18.69it/s]TEDS:  35%|#################################8                                                               | 30/86 [00:01<00:02, 19.01it/s]TEDS:  38%|#####################################2                                                           | 33/86 [00:02<00:02, 20.84it/s]TEDS:  42%|########################################6                                                        | 36/86 [00:02<00:02, 22.14it/s]TEDS:  45%|###########################################9                                                     | 39/86 [00:02<00:02, 22.93it/s]TEDS:  49%|###############################################3                                                 | 42/86 [00:02<00:01, 22.30it/s]TEDS:  52%|##################################################7                                              | 45/86 [00:02<00:02, 18.22it/s]TEDS:  55%|#####################################################                                            | 47/86 [00:03<00:04,  9.61it/s]TEDS:  57%|#######################################################2                                         | 49/86 [00:03<00:03, 10.35it/s]TEDS:  59%|#########################################################5                                       | 51/86 [00:03<00:03, 11.19it/s]TEDS:  63%|############################################################9                                    | 54/86 [00:03<00:03, 10.05it/s]TEDS:  66%|################################################################2                                | 57/86 [00:03<00:02, 12.88it/s]TEDS:  70%|###################################################################6                             | 60/86 [00:04<00:01, 14.44it/s]TEDS:  72%|#####################################################################9                           | 62/86 [00:05<00:05,  4.44it/s]TEDS:  77%|##########################################################################4                      | 66/86 [00:05<00:02,  6.85it/s]TEDS:  81%|##############################################################################9                  | 70/86 [00:05<00:01,  8.95it/s]TEDS:  84%|#################################################################################2               | 72/86 [00:06<00:01,  8.21it/s]TEDS:  88%|#####################################################################################7           | 76/86 [00:06<00:00, 11.46it/s]TEDS:  92%|#########################################################################################1       | 79/86 [00:06<00:00, 12.12it/s]TEDS:  94%|###########################################################################################3     | 81/86 [00:06<00:00, 13.03it/s]TEDS:  97%|#############################################################################################6   | 83/86 [00:07<00:00,  7.73it/s]TEDS:  99%|###############################################################################################8 | 85/86 [00:07<00:00,  7.57it/s]TEDS: 100%|#################################################################################################| 86/86 [00:07<00:00, 10.94it/s]
+【table】
+TEDS:
+---  --------
+all  0.700147
+---  --------
+====================================================================================================
+TEDS_structure_only:
+---  --------
+all  0.731664
+---  --------
+====================================================================================================
+----Anno Attribute---------------
+sample_count:
+
+====================================================================================================
+TEDS:
+------------------------------  ---------
+ALL                             0.823042
+None                            0.0844401
+colorful_backgroud              0.991798
+data_source: book               0.904725
+data_source: colorful_textbook  0.984381
+data_source: exam_paper         0.945564
+data_source: magazine           0.751315
+data_source: newspaper          0.666926
+data_source: note               0.702292
+data_source: research_report    0.559331
+fuzzy_scan                      0.966699
+language: en_ch_mixed           0.896622
+language: english               0.787589
+language: simplified_chinese    0.817023
+language: traditional_chinese   0.916667
+layout: 1andmore_column         0.995671
+layout: double_column           0.972788
+layout: other_layout            0.804954
+layout: single_column           0.764301
+layout: three_column            0.947316
+subset: layout_hard             0.935696
+subset: table_hard              0.899027
+subset: v1.5                    0.807451
+watermark                       0.875104
+------------------------------  ---------
+====================================================================================================
+TEDS_structure_only:
+------------------------------  --------
+ALL                             0.855084
+None                            0.101307
+colorful_backgroud              1
+data_source: book               0.942913
+data_source: colorful_textbook  1
+data_source: exam_paper         0.964706
+data_source: magazine           0.758333
+data_source: newspaper          0.747534
+data_source: note               0.747182
+data_source: research_report    0.581548
+fuzzy_scan                      0.975
+language: en_ch_mixed           0.916667
+language: english               0.832934
+language: simplified_chinese    0.845321
+language: traditional_chinese   1
+layout: 1andmore_column         1
+layout: double_column           0.9875
+layout: other_layout            0.848122
+layout: single_column           0.798385
+layout: three_column            1
+subset: layout_hard             0.994872
+subset: table_hard              0.9375
+subset: v1.5                    0.836027
+watermark                       0.9
+------------------------------  --------
+====================================================================================================
+========== RUNTIME_ENVIRONMENT markdown_quick_match ==========
+save_name: markdown_quick_match
+[system]
+platform: Linux-6.8.0-79-generic-x86_64-with-glibc2.39
+python_version: 3.10.20 (main, Mar  3 2026, 09:24:47) [GCC 13.3.0]
+python_executable: /root/envs/odb-eval/bin/python3.10
+python_prefix: /root/envs/odb-eval
+conda_env:
+conda_prefix:
+libc: glibc 2.39
+uname: Linux u-4695-e6d1476b 6.8.0-79-generic #79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025 x86_64 x86_64
+os_release: {"BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/", "HOME_URL": "https://www.ubuntu.com/", "ID": "ubuntu", "ID_LIKE": "debian", "LOGO": "ubuntu-logo", "NAME": "Ubuntu", "PRETTY_NAME": "Ubuntu 24.04.4 LTS", "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy", "SUPPORT_URL": "https://help.ubuntu.com/", "UBUNTU_CODENAME": "noble", "VERSION": "24.04.4 LTS (Noble Numbat)", "VERSION_CODENAME": "noble", "VERSION_ID": "24.04"}
+[system_packages]
+package_manager: dpkg-query
+fontconfig: fontconfig=2.15.0-1.1ubuntu2
+ghostscript: ghostscript=
+imagemagick: unavailable (dpkg-query: no packages found matching imagemagick)
+latexml: latexml=
+python3: python3=3.12.3-0ubuntu2.1
+python3-pip: python3-pip=24.0+dfsg-1ubuntu1.3
+python3-setuptools: python3-setuptools=68.1.2-2ubuntu1.2
+python3-wheel: python3-wheel=0.42.0-2
+texlive-base: unavailable (dpkg-query: no packages found matching texlive-base)
+texlive-binaries: texlive-binaries=
+texlive-fonts-recommended: unavailable (dpkg-query: no packages found matching texlive-fonts-recommended)
+texlive-lang-chinese: unavailable (dpkg-query: no packages found matching texlive-lang-chinese)
+texlive-lang-cjk: unavailable (dpkg-query: no packages found matching texlive-lang-cjk)
+texlive-latex-base: unavailable (dpkg-query: no packages found matching texlive-latex-base)
+texlive-latex-extra: unavailable (dpkg-query: no packages found matching texlive-latex-extra)
+texlive-plain-generic: unavailable (dpkg-query: no packages found matching texlive-plain-generic)
+[python_packages]
+Levenshtein: 0.25.1
+Pillow: 10.4.0
+PyYAML: 6.0.2
+apted: 1.0.3
+beautifulsoup4: 4.11.1
+evaluate: 0.4.3
+func-timeout: 4.3.5
+loguru: 0.7.2
+lxml: 4.9.1
+matplotlib: 3.7.5
+nltk: 3.9.1
+numpy: 1.24.4
+pandas: 2.0.3
+pip: 23.0.1
+pylatexenc: 2.10
+scipy: 1.10.1
+setuptools: 79.0.1
+tabulate: 0.9.0
+tqdm: 4.67.1
+wheel: 0.47.0
+[external_tools]
+convert: path=convert returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'convert')
+ghostscript: path=gs returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'gs')
+identify: path=identify returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'identify')
+kpsewhich: path=/share/texlive/kpsewhich returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich')
+latexmlc: path=latexmlc returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'latexmlc')
+magick: path=magick returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'magick')
+pdflatex: path=/share/texlive/pdflatex returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/pdflatex')
+tlmgr: path=tlmgr returncode=None output=unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'tlmgr')
+[texlive]
+cjk_font_family: gkai
+cjk_sty: status=not_found path=unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich') version=unavailable date= header=
+cjk_font_fd: status=not_found path=unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich') version=unavailable date= header=
+
+========== END_RUNTIME_ENVIRONMENT markdown_quick_match ==========
+========== STAGE_EXECUTION markdown_quick_match ==========
+save_name: markdown_quick_match
+[page_match]
+workers: 4
+page_count: 47
+quick_match_truncated_timeout_sec: 300
+match_timeout_sec: 420
+fallbacks:
+  - page_timeout: count=0
+  - quick_match_timeout: count=0
+[table.TEDS]
+workers: 1
+timeout_sec: 120.0
+sample_count: 86
+timeout_case_count: 0
+error_case_count: 0
+exception_case_count: 0
+
+========== END_STAGE_EXECUTION markdown_quick_match ==========
+========== FINAL_EVAL_RUN_REPORT markdown_quick_match ==========
+{
+  "notebook_metric_summary": {
+    "metrics": {
+      "display_formula_CDM": {
+        "notebook_value": null,
+        "page_denominator": null,
+        "raw": null
+      },
+      "reading_order_Edit_dist": {
+        "notebook_value": null,
+        "page_denominator": null,
+        "raw": null
+      },
+      "table_TEDS": {
+        "notebook_value": 82.30421461534239,
+        "page_denominator": 47,
+        "raw": 0.8230421461534239
+      },
+      "table_TEDS_structure_only": {
+        "notebook_value": 85.50842732757683,
+        "page_denominator": 47,
+        "raw": 0.8550842732757683
+      },
+      "text_block_Edit_dist": {
+        "notebook_value": null,
+        "page_denominator": null,
+        "raw": null
+      }
+    },
+    "overall_notebook": null,
+    "source": "tools/generate_result_tables.ipynb#cell-2"
+  },
+  "page_denominators": {
+    "table": {
+      "TEDS": {
+        "ALL": 47
+      },
+      "TEDS_structure_only": {
+        "ALL": 47
+      }
+    }
+  },
+  "runtime_environment": {
+    "external_tools": {
+      "convert": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'convert')",
+        "path": "convert",
+        "returncode": null
+      },
+      "ghostscript": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'gs')",
+        "path": "gs",
+        "returncode": null
+      },
+      "identify": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'identify')",
+        "path": "identify",
+        "returncode": null
+      },
+      "kpsewhich": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich')",
+        "path": "/share/texlive/kpsewhich",
+        "returncode": null
+      },
+      "latexmlc": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'latexmlc')",
+        "path": "latexmlc",
+        "returncode": null
+      },
+      "magick": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'magick')",
+        "path": "magick",
+        "returncode": null
+      },
+      "pdflatex": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/pdflatex')",
+        "path": "/share/texlive/pdflatex",
+        "returncode": null
+      },
+      "tlmgr": {
+        "output": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: 'tlmgr')",
+        "path": "tlmgr",
+        "returncode": null
+      }
+    },
+    "python_packages": {
+      "Levenshtein": "0.25.1",
+      "Pillow": "10.4.0",
+      "PyYAML": "6.0.2",
+      "apted": "1.0.3",
+      "beautifulsoup4": "4.11.1",
+      "evaluate": "0.4.3",
+      "func-timeout": "4.3.5",
+      "loguru": "0.7.2",
+      "lxml": "4.9.1",
+      "matplotlib": "3.7.5",
+      "nltk": "3.9.1",
+      "numpy": "1.24.4",
+      "pandas": "2.0.3",
+      "pip": "23.0.1",
+      "pylatexenc": "2.10",
+      "scipy": "1.10.1",
+      "setuptools": "79.0.1",
+      "tabulate": "0.9.0",
+      "tqdm": "4.67.1",
+      "wheel": "0.47.0"
+    },
+    "system": {
+      "conda_env": "",
+      "conda_prefix": "",
+      "libc": "glibc 2.39",
+      "os_release": {
+        "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+        "HOME_URL": "https://www.ubuntu.com/",
+        "ID": "ubuntu",
+        "ID_LIKE": "debian",
+        "LOGO": "ubuntu-logo",
+        "NAME": "Ubuntu",
+        "PRETTY_NAME": "Ubuntu 24.04.4 LTS",
+        "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+        "SUPPORT_URL": "https://help.ubuntu.com/",
+        "UBUNTU_CODENAME": "noble",
+        "VERSION": "24.04.4 LTS (Noble Numbat)",
+        "VERSION_CODENAME": "noble",
+        "VERSION_ID": "24.04"
+      },
+      "platform": "Linux-6.8.0-79-generic-x86_64-with-glibc2.39",
+      "python_executable": "/root/envs/odb-eval/bin/python3.10",
+      "python_prefix": "/root/envs/odb-eval",
+      "python_version": "3.10.20 (main, Mar  3 2026, 09:24:47) [GCC 13.3.0]",
+      "uname": "Linux u-4695-e6d1476b 6.8.0-79-generic #79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025 x86_64 x86_64"
+    },
+    "system_packages": {
+      "package_manager": "dpkg-query",
+      "tracked_packages": {
+        "fontconfig": "fontconfig=2.15.0-1.1ubuntu2",
+        "ghostscript": "ghostscript=",
+        "imagemagick": "unavailable (dpkg-query: no packages found matching imagemagick)",
+        "latexml": "latexml=",
+        "python3": "python3=3.12.3-0ubuntu2.1",
+        "python3-pip": "python3-pip=24.0+dfsg-1ubuntu1.3",
+        "python3-setuptools": "python3-setuptools=68.1.2-2ubuntu1.2",
+        "python3-wheel": "python3-wheel=0.42.0-2",
+        "texlive-base": "unavailable (dpkg-query: no packages found matching texlive-base)",
+        "texlive-binaries": "texlive-binaries=",
+        "texlive-fonts-recommended": "unavailable (dpkg-query: no packages found matching texlive-fonts-recommended)",
+        "texlive-lang-chinese": "unavailable (dpkg-query: no packages found matching texlive-lang-chinese)",
+        "texlive-lang-cjk": "unavailable (dpkg-query: no packages found matching texlive-lang-cjk)",
+        "texlive-latex-base": "unavailable (dpkg-query: no packages found matching texlive-latex-base)",
+        "texlive-latex-extra": "unavailable (dpkg-query: no packages found matching texlive-latex-extra)",
+        "texlive-plain-generic": "unavailable (dpkg-query: no packages found matching texlive-plain-generic)"
+      }
+    },
+    "texlive": {
+      "cjk_font_family": "gkai",
+      "cjk_font_fd": {
+        "date": "",
+        "header": "",
+        "path": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich')",
+        "status": "not_found",
+        "version": "unavailable"
+      },
+      "cjk_sty": {
+        "date": "",
+        "header": "",
+        "path": "unavailable (FileNotFoundError: [Errno 2] No such file or directory: '/share/texlive/kpsewhich')",
+        "status": "not_found",
+        "version": "unavailable"
+      }
+    }
+  },
+  "save_name": "markdown_quick_match",
+  "stage_execution": {
+    "metrics": {
+      "table": {
+        "TEDS": {
+          "error_case_count": 0,
+          "error_cases": [],
+          "exception_case_count": 0,
+          "exception_cases": [],
+          "sample_count": 86,
+          "timeout_case_count": 0,
+          "timeout_cases": [],
+          "timeout_sec": 120.0,
+          "workers": 1
+        }
+      }
+    },
+    "page_match": {
+      "fallbacks": {
+        "page_timeout": {
+          "cases": [],
+          "count": 0
+        },
+        "quick_match_timeout": {
+          "cases": [],
+          "count": 0
+        }
+      },
+      "match_timeout_sec": 420,
+      "page_count": 47,
+      "quick_match_truncated_timeout_sec": 300,
+      "workers": 4
+    }
+  }
+}
+========== END_FINAL_EVAL_RUN_REPORT markdown_quick_match ==========
+[final-eval-run-report] saved to ./result/markdown_quick_match_run_summary.json
+[runtime-environment-json] saved to ./result/markdown_quick_match_runtime_environment.json
+[runtime-environment-log] saved to ./result/markdown_quick_match_runtime_environment.log
+[stage-execution-json] saved to ./result/markdown_quick_match_stage_execution.json
+[stage-execution-log] saved to ./result/markdown_quick_match_stage_execution.log

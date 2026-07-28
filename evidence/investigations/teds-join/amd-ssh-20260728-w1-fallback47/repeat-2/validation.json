@@ -1,0 +1,14 @@
+{
+  "page_count": 47,
+  "match_workers": 4,
+  "teds_workers": 1,
+  "teds_sample_count": 86,
+  "error_case_count": 0,
+  "timeout_case_count": 0,
+  "exception_case_count": 0,
+  "join_error_count": 0,
+  "table_teds_sample_all": 0.7001473590085873,
+  "table_teds_page_all": 0.8230421461534239,
+  "structurally_valid": true,
+  "layer_a_vanished": true
+}

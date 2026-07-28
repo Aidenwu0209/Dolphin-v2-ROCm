@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-28T03:23:15Z",
+  "code": {
+    "repository": "https://github.com/Aidenwu0209/Dolphin-v2-ROCm",
+    "commit": "122162210307845c7bbb767ac54ca93d9a539c5e",
+    "remote_checkout_clean": true
+  },
+  "model": {
+    "repository": "ByteDance/Dolphin-v2",
+    "revision": "c37c62768c644bb594da4283149c627765aa80f3",
+    "manifest": "runtime/model_manifest.json",
+    "top_level_file_count": 14,
+    "top_level_total_bytes": 7520906987,
+    "weight_file_count": 2,
+    "weight_total_bytes": 7509337944,
+    "index_weight_entry_count": 824
+  },
+  "dataset": {
+    "name": "opendatalab/OmniDocBench",
+    "revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+    "revision_evidence": [
+      "smoke9/input_manifest.json",
+      "source-metadata/huggingface-download",
+      "source-metadata/IMAGE_SHA256SUMS"
+    ],
+    "run_stats_dataset_revision": null
+  },
+  "input": {
+    "suite": "smoke9",
+    "count": 9,
+    "manifest": "smoke9/input_manifest.json"
+  },
+  "config": {
+    "source": "eval/configs/smoke.yaml",
+    "resolved": "smoke9/resolved_config.json",
+    "config_digest": "sha256:4a855d001cd6f64e1204684110c552b8c279d779011d1ee457c95083b3a39c70",
+    "backend": "transformers",
+    "dtype": "bfloat16",
+    "device_namespace": "cuda",
+    "device_namespace_meaning": "HIP/ROCm",
+    "attention_implementation": "sdpa",
+    "allow_cpu_fallback": false
+  },
+  "result": {
+    "total": 9,
+    "succeeded": 9,
+    "failed": 0,
+    "skipped": 0,
+    "pages_missing_records": [],
+    "checkpoint_fallback_count": 0,
+    "distorted_page_mode_count": 0,
+    "raw_distorted_count": 0,
+    "duration_seconds": 2605.0,
+    "model_load_seconds": 26.35
+  },
+  "environment": {
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.8.0-79-generic",
+    "rocm": "7.2.1",
+    "amdgpu_driver": "6.14.14",
+    "gpu": "AMD Radeon Graphics",
+    "gpu_arch": "gfx1100",
+    "vram_gb": 48.0,
+    "torch": "2.7.1+rocm7.2.0.git262e50d5",
+    "hip": "7.2.26015-fc0010cf6a",
+    "transformers": "4.51.0",
+    "accelerate": "1.4.0",
+    "qwen_vl_utils": "0.0.14",
+    "risky_rocm_environment_overrides": {}
+  },
+  "scorer": null
+}

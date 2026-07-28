@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "errors": [],
+  "checked_at": "2026-07-28T03:52:34.315184Z",
+  "expected_pages": 8,
+  "checkpoint_pages": 8,
+  "nonempty_markdown": 8,
+  "raw_json": 8,
+  "checkpoint_fallback_count": 0,
+  "distorted_page_mode_count": 0,
+  "raw_distorted_count": 0,
+  "config_digest": "sha256:d83009be880da75eb117b32f26a57f7c22737b8c5a394f3c9e25b61b9a924e9c",
+  "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec"
+}

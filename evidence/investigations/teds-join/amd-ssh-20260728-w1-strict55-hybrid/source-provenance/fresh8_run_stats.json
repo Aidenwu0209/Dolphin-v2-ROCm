@@ -1,0 +1,18 @@
+{
+  "total": 8,
+  "succeeded": 8,
+  "failed": 0,
+  "skipped": 0,
+  "fallback": 0,
+  "started_at": "2026-07-28T03:23:31Z",
+  "finished_at": "2026-07-28T03:51:49Z",
+  "duration_seconds": 1698.4,
+  "backend": "transformers",
+  "platform": "linux-rocm",
+  "model_revision": "c37c62768c644bb594da4283149c627765aa80f3",
+  "dataset_revision": "aa1ee96d106dbe53d0ae59474d75c6e6d9b53fec",
+  "output_dir": "/root/amd-evidence/inference/teds-missing8.iI3PW1cY",
+  "config_digest": "sha256:d83009be880da75eb117b32f26a57f7c22737b8c5a394f3c9e25b61b9a924e9c",
+  "model_load_seconds": 25.27,
+  "pages_missing_records": []
+}

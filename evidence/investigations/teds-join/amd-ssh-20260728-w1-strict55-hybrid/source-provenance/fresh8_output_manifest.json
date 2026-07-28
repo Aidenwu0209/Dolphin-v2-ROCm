@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "markdown": [
+    {
+      "name": "page-d0b2bb59-ce8e-4a1c-9ba1-a805606a477f.md",
+      "size_bytes": 2332,
+      "sha256": "265a4d74b3689a90714c63e071e3cf2dbb093539dc799bcb31287fe775681ba1"
+    },
+    {
+      "name": "page-d29fe4d2-832a-4ad6-ac80-dc01cf8b0e16.md",
+      "size_bytes": 3716,
+      "sha256": "df491106b1ce55bfeaad76c4557203f512ce5a98ff49038ce821c4ba55773f4e"
+    },
+    {
+      "name": "page-f9583127-1277-4424-be9d-35430e0aedd6.md",
+      "size_bytes": 3836,
+      "sha256": "de832314919b8e526bef983c5ae41ae29ec8ce8e94ff8650c6ce5edcb97b7736"
+    },
+    {
+      "name": "yanbaopptmerge_3f514841b9bba3e68710fde7af9562d36a424736a356ece18bb5eea86b43ada5.pdf_15.md",
+      "size_bytes": 4466,
+      "sha256": "3a8f807d295e8899787bdad2ac0bb249eccd9fb098b175e5cb7d7c3daf4a89e4"
+    },
+    {
+      "name": "yanbaor2_4f58b4bb233e5ccdf512d286d177cb94e6f6ae91d5b089ac841727067a20a510.pdf_3.md",
+      "size_bytes": 1060,
+      "sha256": "91ec2b20fb7e373170ba24a5ee5b8c191af51c8f11f616a18536a688ddb5f080"
+    },
+    {
+      "name": "yanbaor2_5e780ffd1efcf79950df199abb69a114dd782d5b549ecd025b640f29a4feabef.pdf_2.md",
+      "size_bytes": 2525,
+      "sha256": "a6b59d72aaeafee00d8ff1eeef9376d3d8fa75f4613adc909c0544992cd191c4"
+    },
+    {
+      "name": "yanbaor2_ey-global-fintech-adoption-index.pdf_30.md",
+      "size_bytes": 977,
+      "sha256": "8edc97ec39431f2143d7a3ee4347e575fca2fc20488f4230f74c5927786ff1c0"
+    },
+    {
+      "name": "yanbaor2_yanbaoPPT_2098.md",
+      "size_bytes": 3277,
+      "sha256": "b0b27125141e905cd8a4014534a9eff2e0c346fe1e3f4f741d20dfb92805b87d"
+    }
+  ],
+  "raw": [
+    {
+      "name": "page-d0b2bb59-ce8e-4a1c-9ba1-a805606a477f.json",
+      "size_bytes": 3414,
+      "sha256": "f3c82e8dbf45756a21f66ff98dde537600e5a4532fbea29473b0de7f2eac7ad1"
+    },
+    {
+      "name": "page-d29fe4d2-832a-4ad6-ac80-dc01cf8b0e16.json",
+      "size_bytes": 5223,
+      "sha256": "11c01fdab490e5a7c63f488aea825e06dd97e5cbae4f12549dbc960571a3491a"
+    },
+    {
+      "name": "page-f9583127-1277-4424-be9d-35430e0aedd6.json",
+      "size_bytes": 7275,
+      "sha256": "b1468613ecca3853c5d20c027800b6be409cd906f4f5c19b7dd95b477dad2f17"
+    },
+    {
+      "name": "yanbaopptmerge_3f514841b9bba3e68710fde7af9562d36a424736a356ece18bb5eea86b43ada5.pdf_15.json",
+      "size_bytes": 6512,
+      "sha256": "d2c1ff5b6071e91facd4dcacd3e496ccac399cb48a8bf53085b556c812c74fb4"
+    },
+    {
+      "name": "yanbaor2_4f58b4bb233e5ccdf512d286d177cb94e6f6ae91d5b089ac841727067a20a510.pdf_3.json",
+      "size_bytes": 1812,
+      "sha256": "6549277fcef21957f738d6e2b0799bb2beb47df3f63114a748b770f9ffd20ccb"
+    },
+    {
+      "name": "yanbaor2_5e780ffd1efcf79950df199abb69a114dd782d5b549ecd025b640f29a4feabef.pdf_2.json",
+      "size_bytes": 3951,
+      "sha256": "5547225426fae34db13cdd4618c9db58729867a94daf20ad42bbdcaeb413220f"
+    },
+    {
+      "name": "yanbaor2_ey-global-fintech-adoption-index.pdf_30.json",
+      "size_bytes": 1879,
+      "sha256": "ef938587aa1085cf4d261f90e6e9430c46e6f51b6ca933c1e6da3d5e57037f3a"
+    },
+    {
+      "name": "yanbaor2_yanbaoPPT_2098.json",
+      "size_bytes": 4141,
+      "sha256": "927232dcd827edff57324093823e726329bd7a868ddb2519d71ed582a4452b02"
+    }
+  ]
+}
