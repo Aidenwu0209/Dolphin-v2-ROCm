@@ -34,14 +34,15 @@ Adapt ByteDance Dolphin-v2 for AMD ROCm (W7900D / gfx1100 / ROCm 7.2), produce r
 - Delivery report: `docs/delivery-report.md`.
 - Scripts hardened: `run_full_score.sh`, `run_full_eval.sh` (archive-before-score), `finalize_result_dir.sh`.
 
-### Phase B — Offline root-cause P0 (in progress on branch)
+### Phase B — Offline root-cause P0 (implemented on branch)
 
 - Branch: **`feat/rootcause-offline-p0`** (tracks `origin/feat/rootcause-offline-p0`).
-- **PR #2 open (CI green):** https://github.com/Aidenwu0209/Dolphin-v2-ROCm/pull/2
+- **PR #2 open:** https://github.com/Aidenwu0209/Dolphin-v2-ROCm/pull/2
   Title: Offline root-cause scaffolds and 5070 Ti page lists.
-  Includes earlier vLLM status rewrite commit + offline scaffolds. **Not merged yet** — wait for user OK.
-- Tip on remote: `1221622` (lint fix + HOST_WORKSPACE).
-- **Local uncommitted** (must commit/push before relying on them remotely):
+  Includes earlier vLLM status rewrite, offline scaffolds, and the fresh AMD
+  validation commit. **Not merged yet** — check live CI and wait for user OK.
+- Tip pushed to remote: `1491184` (`Validate AMD runtime and isolate TEDS join failures`).
+- **Included in `1491184`:**
   - `evidence/investigations/three-findings/NOTES.md` (important analysis)
   - `evidence/investigations/INDEX.md` (updated)
   - `.gitignore` adds `.local-cache/`
@@ -50,7 +51,7 @@ Adapt ByteDance Dolphin-v2 for AMD ROCm (W7900D / gfx1100 / ROCm 7.2), produce r
   - TEDS isolation driver + tests
   - fresh AMD runtime/smoke and fallback47/strict55 evidence packages
 
-### Phase C — Three-finding offline probe (done locally, partly uncommitted)
+### Phase C — Three-finding offline probe (done and pushed)
 
 Full write-up: `evidence/investigations/three-findings/NOTES.md`
 Used pinned GT: `.local-cache/OmniDocBench.json` (rev `aa1ee96…` from `runtime-manifest.json`; **gitignored**, re-download if missing).
@@ -96,7 +97,8 @@ Used pinned GT: `.local-cache/OmniDocBench.json` (rev `aa1ee96…` from `runtime
   - `evidence/investigations/amd-runtime-smoke/amd-ssh-20260728-rocm72-gfx1100-r1/`
   - `evidence/investigations/teds-join/amd-ssh-20260728-w1-fallback47/`
   - `evidence/investigations/teds-join/amd-ssh-20260728-w1-strict55-hybrid/`
-- No commit, push, merge, or upstream Issue was performed.
+- The evidence and local hardening were committed and pushed in `1491184`.
+  No merge or upstream Issue was performed.
 
 ### Phase E — 5070 Ti Windows host (partially set up, smoke NOT done)
 
@@ -170,8 +172,7 @@ pinned lists contain 19 and 10 pages and rebuild exactly from GT.
 
 ### Local / release follow-up
 
-1. Review the complete dirty-tree scope, then commit+push only if the user
-   wants these results on PR #2.
+1. Check PR #2 CI for commit `1491184`; address only actionable failures.
 2. Merge PR #2 only with user OK.
 3. Optional stronger control: run the same hybrid55 prediction set with
    `teds_workers=4`; workers=1 strict55 is already complete.
